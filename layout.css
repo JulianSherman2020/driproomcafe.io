@@ -1,0 +1,211 @@
+/* =========================
+  CSS RESETS & GLOBAL STYLES
+  ========================= */
+
+/* 1. Box sizing reset */
+* {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin from paragraphs */
+p {
+  margin: 0;
+  padding:0;
+}
+
+/* 3. Body font */
+body {
+  overflow: auto;
+}
+
+section {
+  margin:2% 0%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: left;
+  text-align: start;
+}
+
+.section-heading-menu {
+  align-items: start;
+  justify-content: start;
+  width: 60%;
+}
+
+.menu-item-name {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  margin:1% 0%;
+}
+
+.card-body {
+  justify-content: start;
+  text-align: left;
+}
+
+.card-footer  {
+  background-color:white;
+  border:0px;
+}
+
+
+.card-footer .btn {
+  display: block;
+}
+
+/* ========== 2. NAVIGATION ========== */
+/* Navbar styles */
+
+
+/* =========================
+  SECTION LAYOUTS
+  ========================= */
+
+/* =========================
+  PAGE TITLE & HERO SECTIONS
+  ========================= */
+
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: left;
+}
+
+.pg-title {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: left;
+}
+
+/* =========================
+  INNER SECTION BOXES & HEADINGS
+  ========================= */
+.inner-section-box {
+  height: fit-content;
+  align-items: top;
+  justify-content: start;
+  margin-bottom:15%;
+}
+/* =========================
+  ICONS & IMAGES
+  ========================= */
+.icon {
+  width: 2.5rem;
+}
+
+/* =========================
+  SIDENAV STYLES
+  ========================= */
+#sidenav .col {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  text-decoration: none;
+  padding: 5px 2px;
+  margin: 4px 0px;
+}
+#sidenav .section-heading {
+  padding: 2px 0px;
+}
+
+#sidenav img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#sidenav a {
+  font-family: monospace;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+}
+#Sidenav .col:hover {
+  padding: 0;
+}
+#sidenav a.active {
+  padding: 0;
+}
+
+/* =========================
+  FOOTER STYLES
+  ========================= */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  height: fit-content; 
+}
+footer .left-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+footer .right-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+/* =========================
+  CONTACT US SECTION
+  ========================= */
+#contact-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+  SOCIAL MEDIA ICONS
+  ========================= */
+.social-media-row-footer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.social-media-icons {
+  margin-left: 10px;
+}
+.fa-brands {
+  padding: 10px;
+}
+.fa-brands:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+  COPYRIGHT ROW
+  ========================= */
+#copyright {
+  font-size: 8px;
+}
+.copyright-row {
+  display: flex;
+  flex-direction: row;
+}

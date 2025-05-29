@@ -1,0 +1,148 @@
+/* 
+  Mobile Stylesheet 
+  File: mobile.css
+  Description: Responsive styles for mobile devices (max-width: 480px)
+*/
+@media (max-width: 480px) {
+  /* ======= GLOBALS ======= */
+  /* Font size utility classes */
+.fs-1 {
+  font-size: 1.8rem;
+}
+.fs-2 {
+  font-size: 1.5rem;
+}                                 
+.fs-3 {
+    font-size: 1.25rem; /* ~20px */
+}
+.fs-4 {
+    font-size: 1.1rem; /* ~17.6px */
+}
+.fs-5 {
+    font-size: 1rem; /* 16px */
+}
+.fs-6 {
+    font-size: 0.9rem; /* ~14.4px */
+}
+
+  /* ======= NAVIGATION ======= */
+  #navbarNav {
+    justify-content: start;
+  }
+  .navbar-nav a {
+    font-size: 15px; /* Slightly larger nav links for touch */
+  }
+
+#hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: left;
+}
+
+
+  /* ======= SECTIONS ======= */
+  /* HERO SECTION */
+
+  .section-heading-menu {
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+ 
+   /* ======= BTNS ======= */
+  .btn {
+    font-size:12px;    /* Full-width buttons for easier tapping */
+  }
+
+  
+  /* CARD & IMAGES */
+  .bg-image {
+    background-image: url("imgs/placeholder.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card {
+    text-align: center;
+    width: 50%;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ICONS */
+  .icon {
+    width: 2.5rem;
+  }
+
+  /* SIDENAV */
+  #sidenav .col {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    text-decoration: none;
+    font-family: Blaster;
+    padding: 5px 2px;
+    margin: 4px 0px;
+  }
+
+  #sidenav .section-heading {
+    padding: 2px 0px;
+  }
+
+  #sidenav img {
+    max-width: 30px;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sidenav a {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Sidenav .col:hover {
+    padding: 0;
+  }
+
+  #sidenav a.active {
+    padding: 0;
+  }
+
+  /* CONTACT US SECTION */
+  #contact-us {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* FOOTER SOCIAL MEDIA */
+  .social-media-row-footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fa-brands {
+    font-size: 20px;
+  }
+}
+
+/* =========================
+   LANDSCAPE STYLES
+   ========================= */
+@media (max-height: 500px) {
+  body {
+    /* Add landscape-specific body styles here if needed */
+  }
+  .landscape h1 {
+    /* Add landscape-specific h1 styles here if needed */
+  }
+}

@@ -1,0 +1,42 @@
+/* Colors for the website */
+ :root {
+ /* primary color */ 
+  --primary-color: #D8BEF2;
+  --primary-color-lighter: #EADCF8;
+  --primary-color-darker: #B89ED6;
+
+   /* secondary colors */ 
+  --secondary-color: #F2E2BE;
+  --tertiary-color: #BEF2D8;
+
+  /* accent colours */
+  --accent-color-1: #F2BED8;
+  --accent-color-2: #BED8F2;
+  --accent-color-3: #F2BEBE;
+  --accent-color-4: #D8F2BE;
+  --accent-color-5: #BEE2F2;
+
+  /* neutral colors */
+  --neutral-color-light: #F2F2F2;
+  --neutral-color-dark: #BEBEBE;
+  --neutral-color-darker: #9E9E9E;
+  --neutral-color-darkest: #7E7E7E;
+  --neutral-color-black: #000000;
+  --neutral-color-white: #FFFFFF;
+ }
+
+ /* colour pallete for the website */
+:root {
+  --color-1-light:#FEF1E4;   
+  --color-1-dark: #FFE6B4;   
+  --color-2-light:#EBAE61;   
+  --color-2-dark: #C28365;
+
+  --color-3: #D8BEF2;
+  --color-4: #ffd2e9;
+  --color-5: #F8BDC5;
+  --color-6: #DAE1A7;
+  --color-7: #E0F1FD;
+  --color-8: #88A8CB;
+
+}

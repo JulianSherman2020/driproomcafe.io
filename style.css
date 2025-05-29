@@ -1,0 +1,140 @@
+/* ========== 1. GLOBAL ========== */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--primary-color);
+}
+header {
+  background-color: var(--primary-color);
+  border: 1px solid rgb(16, 16, 16);
+}
+
+
+/* ========== 2. NAVIGATION ========== */
+/* Navbar styles */
+.navbar {
+  background-color: var(--primary-color);
+  border: 1px solid rgb(16, 16, 16);
+}
+
+.navbar-nav a {
+  font-size: 20px;
+}
+
+/* ========== 2. BTNS & CTA ========== */
+.btn {
+  background-color: var(--color-1-light);      
+  color: #000000;                             
+  border: 2px solid #000000;                 
+  font-family: 'Courier New', monospace;      
+  box-shadow: 6px 6px 0px #000000;           
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px #000000;
+  background-color: var(--color-1-dark);
+}
+
+.btn:active {
+ transform: translate(1px, 1px);
+  box-shadow: 3px 3px 0px #000000;
+}
+
+/* SIDE-BAR */
+#sidenav {
+  background-color: var(--primary-color);
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+#sidenav .col {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+#sidenav a {
+  color: rgb(24, 24, 24);
+}
+
+.sidenav-link-col .col:hover {
+  background-color: var(--primary-color-lighter);
+  color: black;
+  border: 1px solid black;
+}
+
+/* ========== 3. SECTION BOXES & HEADINGS ========== */
+
+
+#pg-title {
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+}
+
+#hero {
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#about {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* section - border styles */
+section {
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  background-color: grey;
+}
+.inner-section-box {
+  background-color: var(--primary-color-lighter);
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+}
+
+/* ========== 7. CARD COMPONENTS ========== */
+.card {
+  border-radius: 4px;
+  outline: 2px solid black;
+}
+
+/* ========== 8. FOOTER ========== */
+footer {
+    border: 2px solid black ;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+#footer-logo {
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+.social-media-row-footer {
+  color: white;
+}
+.fa-brands {
+  font-size: 30px;
+}
+.fa-brands:hover {
+  text-decoration: underline;
+}
+/* =========================
+  COPYRIGHT ROW
+  ========================= */
+#copyright {
+  font-size: 8px;
+}
+/* ========== END OF FILE ========== */

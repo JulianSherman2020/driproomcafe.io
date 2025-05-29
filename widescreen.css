@@ -1,0 +1,15 @@
+/* ===========================
+    Desktop (Widescreen)
+    Screens wider than 1200px
+    =========================== */
+@media (min-width: 1201px) {
+     /* Add widescreen-specific styles here */
+}
+
+/* ===========================
+    Desktop (Standard)
+    Screens between 769px and 1200px
+    =========================== */
+@media (min-width: 769px) and (max-width: 1200px) {
+     /* Add standard desktop styles here */
+}

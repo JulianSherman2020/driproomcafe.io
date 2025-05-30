@@ -1,12 +1,17 @@
 /* Colors for the website */
  :root {
- /* primary color */ 
+ /* primary color 70% */ 
   --primary-color: #D8BEF2;
   --primary-color-lighter: #EADCF8;
   --primary-color-darker: #B89ED6;
 
-   /* secondary colors */ 
-  --secondary-color: #F2E2BE;
+   /* Complementary Colour (25% of website) */ 
+  --secondary-color: #f2e2be;
+
+  /* Branding Colour (5% of website) */ 
+    --secondary-color: #C28365;
+
+
   --tertiary-color: #BEF2D8;
 
   /* accent colours */

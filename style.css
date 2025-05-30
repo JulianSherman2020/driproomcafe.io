@@ -8,6 +8,45 @@ header {
   border: 1px solid rgb(16, 16, 16);
 }
 
+#hero {
+  background-image: url("./imgs/webp/espresso-machine-1.webp");
+  background-size: fill;
+  background-position:center center;
+  background-repeat: no-repeat;
+}
+
+#hero .content {
+  background-color: var(--primary-color);
+  width:fit-content;
+  padding:2% 3%;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+}
+
+
+
+#about {
+  background-image: url("./imgs/webp/daan-evers-tKN1WXrzQ3s-unsplash.jpg");
+  background-size: cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+}
+
+#coffee-card {
+  background-image: url("./imgs/webp/cafe-space-4.webp");
+  background-size: cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+}
+
+#venue-info {
+  background-image: url("./imgs/webp/cafe-venue-1.webp");
+  background-size: cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+}
 
 /* ========== 2. NAVIGATION ========== */
 /* Navbar styles */
@@ -43,6 +82,24 @@ transform: translate(-2px, -2px);
   box-shadow: 3px 3px 0px #000000;
 }
 
+
+.btn-find-us {
+   background-color: var(--primary-color-lighter);      
+  font-family: 'Courier New', monospace;    
+  border-radius: 4px;  
+  cursor: pointer;
+  font-weight: 600;
+  
+}
+
+.btn-find-us:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px #000000;
+  background-color: var(--color-1-dark);
+
+}
+
+
 /* SIDE-BAR */
 #sidenav {
   background-color: var(--primary-color);
@@ -75,15 +132,7 @@ transform: translate(-2px, -2px);
   border-radius: 4px;
 }
 
-#hero {
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#about {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 
 /* section - border styles */
 section {
@@ -91,7 +140,6 @@ section {
   border-style: solid;
   border-width: 2px;
   border-radius: 4px;
-  background-color: grey;
 }
 .inner-section-box {
   background-color: var(--primary-color-lighter);
@@ -105,12 +153,32 @@ section {
 .card {
   border-radius: 4px;
   outline: 2px solid black;
+   background-color: #ffffff00;
+}
+
+.card-img-top {
+  background-color: #ffffff00;
+}
+
+.card-body {
+    background-color: #ffffff;
+
 }
 
 /* ========== 8. FOOTER ========== */
 footer {
     border: 2px solid black ;
 }
+
+#footer-brand-name {
+  font-size:1.4rem;
+}
+
+#footer-link-copyright {
+    font-size:0.8rem;
+    text-align: end;
+}
+
 footer a {
   text-decoration: none;
   color: white;
@@ -122,19 +190,17 @@ footer a:hover {
   letter-spacing: normal;
   text-transform: uppercase;
 }
+
+
 .social-media-row-footer {
   color: white;
 }
-.fa-brands {
-  font-size: 30px;
-}
+
 .fa-brands:hover {
   text-decoration: underline;
 }
 /* =========================
   COPYRIGHT ROW
   ========================= */
-#copyright {
-  font-size: 8px;
-}
+
 /* ========== END OF FILE ========== */

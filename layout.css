@@ -146,24 +146,6 @@ ul {
 /* =========================
   FOOTER STYLES
   ========================= */
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  height: fit-content; 
-}
-footer .left-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-}
-footer .right-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: end;
-}
 
 /* =========================
   CONTACT US SECTION
@@ -171,41 +153,47 @@ footer .right-col {
 #contact-us {
   display: flex;
   flex-direction: row;
+   justify-content: center;
+  align-items: end;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .left-col {
+ display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: start;
 }
-form {
-  display: flex;
+
+footer .right-col {
+ display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: end;
 }
+
+.social-media-row-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
 
 /* =========================
   SOCIAL MEDIA ICONS
   ========================= */
-.social-media-row-footer {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.social-media-icons {
-  margin-left: 10px;
-}
-.fa-brands {
-  padding: 10px;
-}
-.fa-brands:hover {
-  text-decoration: underline;
-}
 
 /* =========================
   COPYRIGHT ROW
   ========================= */
-#copyright {
-  font-size: 8px;
-}
-.copyright-row {
-  display: flex;
-  flex-direction: row;
-}
+

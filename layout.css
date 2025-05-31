@@ -1,127 +1,135 @@
 /* =========================
-  CSS RESETS & GLOBAL STYLES
+  1. CSS RESETS & GLOBAL STYLES
   ========================= */
 
-/* 1. Box sizing reset */
+/* Box sizing reset */
 * {
   box-sizing: border-box;
 }
 
-/* 2. Remove default margin from paragraphs */
+/* Remove default margin and padding from paragraphs */
 p {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
-/* 3. Body font */
+/* Body overflow */
 body {
   overflow: auto;
 }
 
+/* =========================
+  2. GLOBAL LAYOUTS & SECTIONS
+  ========================= */
+
+/* Section spacing */
 section {
-  margin:2% 0%;
+  margin: 2% 0;
 }
 
+/* Unordered list: horizontal flex layout */
 ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  align-items: start;
-  justify-content: left;
-  text-align: start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
 }
 
+/* Section heading for menu */
 .section-heading-menu {
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 60%;
 }
 
+/* Menu item name styling */
 .menu-item-name {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
+/* Button margin */
 .btn {
-  margin:1% 0%;
+  margin: 1% 0;
 }
 
+/* Card body alignment */
 .card-body {
-  justify-content: start;
+  justify-content: flex-start;
   text-align: left;
 }
 
-.card-footer  {
-  background-color:white;
-  border:0px;
+/* Card footer styling */
+.card-footer {
+  background-color: white;
+  border: 0;
 }
-
-
 .card-footer .btn {
   display: block;
 }
 
-/* ========== 2. NAVIGATION ========== */
-/* Navbar styles */
-
-
 /* =========================
-  SECTION LAYOUTS
+  3. PAGE TITLE & HERO SECTIONS
   ========================= */
 
-/* =========================
-  PAGE TITLE & HERO SECTIONS
-  ========================= */
-
+/* Hero section full viewport height */
 #hero {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   text-align: left;
 }
 
+/* Page title section */
 .pg-title {
   height: 45vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   text-align: left;
 }
 
 /* =========================
-  INNER SECTION BOXES & HEADINGS
+  4. INNER SECTION BOXES & HEADINGS
   ========================= */
+
 .inner-section-box {
   height: fit-content;
-  align-items: top;
-  justify-content: start;
-  margin-bottom:15%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 15%;
 }
+
 /* =========================
-  ICONS & IMAGES
+  5. ICONS & IMAGES
   ========================= */
+
 .icon {
   width: 2.5rem;
 }
 
 /* =========================
-  SIDENAV STYLES
+  6. SIDENAV STYLES
   ========================= */
+
 #sidenav .col {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   text-decoration: none;
   padding: 5px 2px;
-  margin: 4px 0px;
+  margin: 4px 0;
 }
+
 #sidenav .section-heading {
-  padding: 2px 0px;
+  padding: 2px 0;
 }
 
 #sidenav img {
@@ -130,32 +138,37 @@ ul {
   justify-content: center;
   align-items: center;
 }
+
 #sidenav a {
   font-family: monospace;
-  align-self: start;
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
 }
-#Sidenav .col:hover {
+
+/* Note: Fixed selector typo from #Sidenav to #sidenav */
+#sidenav .col:hover {
   padding: 0;
 }
+
 #sidenav a.active {
   padding: 0;
 }
 
 /* =========================
-  FOOTER STYLES
+  7. CONTACT US SECTION
   ========================= */
 
-/* =========================
-  CONTACT US SECTION
-  ========================= */
 #contact-us {
   display: flex;
   flex-direction: row;
-   justify-content: center;
-  align-items: end;
+  justify-content: center;
+  align-items: flex-end;
 }
+
+/* =========================
+  8. FOOTER STYLES
+  ========================= */
 
 footer {
   display: flex;
@@ -165,19 +178,20 @@ footer {
 }
 
 footer .left-col {
- display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
 }
 
 footer .right-col {
- display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
 }
 
+/* Social media row in footer */
 .social-media-row-footer {
   display: flex;
   flex-direction: row;
@@ -185,15 +199,12 @@ footer .right-col {
   align-items: center;
 }
 
-
-
-
+/* =========================
+  9. SOCIAL MEDIA ICONS
+  ========================= */
+/* (Add styles as needed) */
 
 /* =========================
-  SOCIAL MEDIA ICONS
+  10. COPYRIGHT ROW
   ========================= */
-
-/* =========================
-  COPYRIGHT ROW
-  ========================= */
-
+/* (Add styles as needed) */

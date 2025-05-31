@@ -1,47 +1,43 @@
-/* Colors for the website */
- :root {
- /* primary color 70% */ 
+/* Color Palette for the Website */
+:root {
+  /* Primary Colors (70%) */
   --primary-color: #D8BEF2;
   --primary-color-lighter: #EADCF8;
   --primary-color-darker: #B89ED6;
 
-   /* Complementary Colour (25% of website) */ 
-  --secondary-color: #f2e2be;
+  /* Secondary Color (25%) */
+  --secondary-color: #F2E2BE;
 
-  /* Branding Colour (5% of website) */ 
-    --secondary-color: #C28365;
+  /* Branding Color (5%) */
+  --branding-color: #C28365;
 
-
+  /* Tertiary Color */
   --tertiary-color: #BEF2D8;
 
-  /* accent colours */
+  /* Accent Colors */
   --accent-color-1: #F2BED8;
   --accent-color-2: #BED8F2;
   --accent-color-3: #F2BEBE;
   --accent-color-4: #D8F2BE;
   --accent-color-5: #BEE2F2;
 
-  /* neutral colors */
+  /* Neutral Colors */
   --neutral-color-light: #F2F2F2;
   --neutral-color-dark: #BEBEBE;
   --neutral-color-darker: #9E9E9E;
   --neutral-color-darkest: #7E7E7E;
   --neutral-color-black: #000000;
   --neutral-color-white: #FFFFFF;
- }
 
- /* colour pallete for the website */
-:root {
-  --color-1-light:#FEF1E4;   
-  --color-1-dark: #FFE6B4;   
-  --color-2-light:#EBAE61;   
+  /* Additional Palette Colors */
+  --color-1-light: #FEF1E4;
+  --color-1-dark: #FFE6B4;
+  --color-2-light: #EBAE61;
   --color-2-dark: #C28365;
-
   --color-3: #D8BEF2;
-  --color-4: #ffd2e9;
+  --color-4: #FFD2E9;
   --color-5: #F8BDC5;
   --color-6: #DAE1A7;
   --color-7: #E0F1FD;
   --color-8: #88A8CB;
-
 }

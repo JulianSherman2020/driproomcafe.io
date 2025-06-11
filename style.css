@@ -13,6 +13,8 @@ header {
   background-size: fill;
   background-position:center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 
 #hero .content {
@@ -28,7 +30,7 @@ header {
 
 
 #about {
-  background-image: url("./imgs/webp/daan-evers-tKN1WXrzQ3s-unsplash.jpg");
+  background-image: url("./imgs/webp/daan-evers-tKN1WXrzQ3s-unsplash.webp");
   background-size: cover;
   background-position:center center;
   background-repeat: no-repeat;

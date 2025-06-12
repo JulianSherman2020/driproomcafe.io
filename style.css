@@ -8,6 +8,14 @@ header {
   border: 1px solid rgb(16, 16, 16);
 }
 
+/* text-utilising classes */
+.underline {
+  text-decoration: underline;
+}
+.bold {
+  font-weight: bold;
+}
+
 #hero {
   background-image: url("./imgs/webp/espresso-machine-1.webp");
   background-size: fill;

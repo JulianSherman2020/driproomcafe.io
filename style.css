@@ -214,7 +214,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: white;
+  color: rgb(27, 27, 27);
 }
 footer a:hover {
   text-decoration: underline;

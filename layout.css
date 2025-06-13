@@ -68,6 +68,7 @@ ul {
 }
 .card-footer .btn {
   display: block;
+  margin-bottom:8%;
 }
 
 .card-img-top {

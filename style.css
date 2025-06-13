@@ -47,6 +47,7 @@ header {
   background-position:center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 100vh;
 
 }
 
@@ -60,10 +61,8 @@ header {
   border-radius: 4px;
 }
 
-
-
 #about {
-  background-image: url("./imgs/optimised/background-imgs/cafe_venue-1.webp");
+  background-image: url("./imgs/optimised/background-imgs/drip_room_cafe-venue-1.webp");
   background-size: cover;
   background-position:center center;
   background-repeat: no-repeat;

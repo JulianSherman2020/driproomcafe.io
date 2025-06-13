@@ -91,7 +91,6 @@ ul {
   align-items: center;
   justify-self: center;
   justify-content: center;
-  background-color: antiquewhite;
   overflow: hidden; /* prevents content spill */
 }
 

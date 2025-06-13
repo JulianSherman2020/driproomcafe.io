@@ -86,12 +86,19 @@ ul {
 
 /* Page title section */
 .pg-title {
-  height: 45vh;
-  display: flex;
-  flex-direction: column;
+  height:55vh;
+  width:100%;
+  align-items: center;
+  justify-self: center;
   justify-content: center;
-  align-items: flex-start;
-  text-align: left;
+  background-color: antiquewhite;
+  overflow: hidden; /* prevents content spill */
+}
+
+.pg-title img {
+  max-width: 100%;     /* Don't go beyond column */
+  height: 60%;    /* Stay inside 45vh container */
+
 }
 
 /* =========================

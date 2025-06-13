@@ -1,7 +1,23 @@
 /* ========== 1. GLOBAL ========== */
+@font-face {
+  font-family: 'lastDream';
+  src: url('./font-files/last_dream/Last\ Dream.woff2') format('woff2'),
+       url('./font-files/last_dream/Last\ Dream.woff') format('woff'); /* optional fallback */
+  font-weight: 200;
+  font-style: normal;
+}
+
+
 body {
   font-family: 'Courier New', Courier, monospace;
   background-color: var(--primary-color);
+}
+
+.display-font {
+  font-family: lastDream, 'Courier New', monospace;
+  font-weight: 100;
+  font-size:24px;
+  color:rgb(71, 71, 71)
 }
 header {
   background-color: var(--primary-color);
@@ -16,9 +32,18 @@ header {
   font-weight: bold;
 }
 
+.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.flip-vertical {
+  transform: scaleY(-1);
+}
+/* ========== 1. BACKGROUND IMAGES ========== */
+
 #hero {
-  background-image: url("./imgs/webp/espresso-machine-1.webp");
-  background-size: fill;
+  background-image: url("./imgs/optimised/background-imgs/espresso_machine-1.webp");
+  background-size: cover;
   background-position:center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -38,21 +63,21 @@ header {
 
 
 #about {
-  background-image: url("./imgs/webp/daan-evers-tKN1WXrzQ3s-unsplash.webp");
+  background-image: url("./imgs/optimised/background-imgs/cafe_venue-1.webp");
   background-size: cover;
   background-position:center center;
   background-repeat: no-repeat;
 }
 
 #coffee-card {
-  background-image: url("./imgs/webp/cafe-space-4.webp");
+  background-image: url("./imgs/optimised/background-imgs/cafe_cookie_counter-1.webp");
   background-size: cover;
   background-position:center center;
   background-repeat: no-repeat;
 }
 
 #venue-info {
-  background-image: url("./imgs/webp/cafe-venue-1.webp");
+  background-image: url("./imgs/optimised/background-imgs/drip_room_cafe-venue-2.webp");
   background-size: cover;
   background-position:center center;
   background-repeat: no-repeat;

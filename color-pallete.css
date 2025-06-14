@@ -1,43 +1,43 @@
 /* Color Palette for the Website */
 :root {
   /* Primary Colors (70%) */
-  --primary-color: #D8BEF2;
-  --primary-color-lighter: #EADCF8;
-  --primary-color-darker: #B89ED6;
+  --primary-color: #d8bef2;
+  --primary-color-lighter: #eadcf8;
+  --primary-color-darker: #b89ed6;
 
   /* Secondary Color (25%) */
-  --secondary-color: #F2E2BE;
+  --secondary-color: #f2e2be;
 
   /* Branding Color (5%) */
-  --branding-color: #C28365;
+  --branding-color: #c28365;
 
   /* Tertiary Color */
-  --tertiary-color: #BEF2D8;
+  --tertiary-color: #bef2d8;
 
   /* Accent Colors */
-  --accent-color-1: #F2BED8;
-  --accent-color-2: #BED8F2;
-  --accent-color-3: #F2BEBE;
-  --accent-color-4: #D8F2BE;
-  --accent-color-5: #BEE2F2;
+  --accent-color-1: #f2bed8;
+  --accent-color-2: #bed8f2;
+  --accent-color-3: #f2bebe;
+  --accent-color-4: #d8f2be;
+  --accent-color-5: #bee2f2;
 
   /* Neutral Colors */
-  --neutral-color-light: #F2F2F2;
-  --neutral-color-dark: #BEBEBE;
-  --neutral-color-darker: #9E9E9E;
-  --neutral-color-darkest: #7E7E7E;
+  --neutral-color-light: #f2f2f2;
+  --neutral-color-dark: #bebebe;
+  --neutral-color-darker: #9e9e9e;
+  --neutral-color-darkest: #7e7e7e;
   --neutral-color-black: #000000;
-  --neutral-color-white: #FFFFFF;
+  --neutral-color-white: #ffffff;
 
   /* Additional Palette Colors */
-  --color-1-light: #FEF1E4;
-  --color-1-dark: #FFE6B4;
-  --color-2-light: #EBAE61;
-  --color-2-dark: #C28365;
-  --color-3: #D8BEF2;
-  --color-4: #FFD2E9;
-  --color-5: #F8BDC5;
-  --color-6: #DAE1A7;
-  --color-7: #E0F1FD;
-  --color-8: #88A8CB;
+  --color-1-light: #fef1e4;
+  --color-1-dark: #ffe6b4;
+  --color-2-light: #ebae61;
+  --color-2-dark: #c28365;
+  --color-3: #d8bef2;
+  --color-4: #ffd2e9;
+  --color-5: #f8bdc5;
+  --color-6: #dae1a7;
+  --color-7: #e0f1fd;
+  --color-8: #88a8cb;
 }

@@ -3,7 +3,7 @@
     Screens wider than 1200px
     =========================== */
 @media (min-width: 1201px) {
-     /* Add widescreen-specific styles here */
+  /* Add widescreen-specific styles here */
 }
 
 /* ===========================
@@ -11,5 +11,5 @@
     Screens between 769px and 1200px
     =========================== */
 @media (min-width: 769px) and (max-width: 1200px) {
-     /* Add standard desktop styles here */
+  /* Add standard desktop styles here */
 }

@@ -7,18 +7,30 @@
 @media (max-width: 480px) {
   /* ======= GLOBALS ======= */
   /* Font size utility classes */
-  .fs-1 { font-size: 1.8rem; }
-  .fs-2 { font-size: 1.5rem; }
-  .fs-3 { font-size: 1.25rem; }
-  .fs-4 { font-size: 1.1rem; }
-  .fs-5 { font-size: 1rem; }
-  .fs-6 { font-size: 0.9rem; }
+  .fs-1 {
+    font-size: 1.8rem;
+  }
+  .fs-2 {
+    font-size: 1.5rem;
+  }
+  .fs-3 {
+    font-size: 1.25rem;
+  }
+  .fs-4 {
+    font-size: 1.1rem;
+  }
+  .fs-5 {
+    font-size: 1rem;
+  }
+  .fs-6 {
+    font-size: 0.9rem;
+  }
   /* ======= NAVIGATION ======= */
 
   .card-img-top {
-  height:150px; ;
-  object-fit: contain;
-}
+    height: 150px;
+    object-fit: contain;
+  }
 
   .navbar-nav a {
     font-size: 15px; /* Larger nav links for touch */
@@ -30,7 +42,7 @@
   /* ======= BUTTONS ======= */
   .btn {
     font-size: 12px; /* Smaller font for mobile buttons */
-    width: 100%;     /* Full-width buttons for easier tapping */
+    width: 100%; /* Full-width buttons for easier tapping */
   }
 
   /* ======= CARD & IMAGES ======= */

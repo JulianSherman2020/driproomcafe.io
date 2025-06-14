@@ -1,69 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- =========================
          HEAD: META & STYLESHEETS
     ========================== -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>the drip room - menu </title>
-    <link rel="icon" type="image/x-icon" href="/imgs/logos/Mug-Walking.svg">  
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the drip room - menu</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/logos/Mug-Walking.svg" />
+
     <!-- Bootstrap Stylesheet via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <!-- google fonts & font awesome -->
-    <script src="https://kit.fontawesome.com/ef7b8b5072.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   <!-- Custom CSS SHEETS -->
+    <script
+      src="https://kit.fontawesome.com/ef7b8b5072.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS SHEETS -->
     <!-- colors -->
-    <link rel="stylesheet" href="./color-pallete.css">
+    <link rel="stylesheet" href="./color-pallete.css" />
     <!-- layout & spacing -->
-    <link rel="stylesheet" href="./layout.css">
+    <link rel="stylesheet" href="./layout.css" />
     <!-- borders & color application -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- responsive style sheets -->
-    <link rel="stylesheet" href="./mobile.css">
-    <link rel="stylesheet" href="./tablet.css">
-    <link rel="stylesheet" href="./widescreen.css">
+    <link rel="stylesheet" href="./mobile.css" />
+    <link rel="stylesheet" href="./tablet.css" />
+    <link rel="stylesheet" href="./widescreen.css" />
   </head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XD3Q5RFWE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-0XD3Q5RFWE"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-0XD3Q5RFWE');
-</script>
+    gtag("config", "G-0XD3Q5RFWE");
+  </script>
   <!-- =========================
          HEAD: META & STYLESHEETS - END 
     ========================== -->
 
-<body>
-  <!-- ================= NAVBAR: START ================= -->
-  <nav class="navbar fixed-top navbar-expand-lg">
+  <body>
+    <!-- ================= NAVBAR: START ================= -->
+    <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand justify-content-start" href="#">
-           <img src="/imgs/logos/Mug-Walking.svg" class="icon me-3"  alt="brand logo for the drip room cafe moorabbin walking cartoon like mug" />
+          <img
+            src="/imgs/logos/Mug-Walking.svg"
+            class="icon me-3"
+            alt="brand logo for the drip room cafe moorabbin walking cartoon like mug"
+          />
           the drip room
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <!-- NAV-LINKS Section -->
-          <ul class="navbar-nav ">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link " href="./index.html">home</a>
+              <a class="nav-link" href="./index.html">home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./store.html">store</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active"  aria-current="page" href="./menu.html">menu</a>
+              <a class="nav-link active" aria-current="page" href="./menu.html"
+                >menu</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">coffee card</a>
@@ -81,298 +114,441 @@
               <a class="nav-link" href="#">cart</a>
             </li>
             <li class="nav-item btn-find-us">
-              <a class="nav-link" href="https://maps.app.goo.gl/69LfUh5GH5MVbF5j7" target="_blank">find us</a>
+              <a
+                class="nav-link"
+                href="https://maps.app.goo.gl/69LfUh5GH5MVbF5j7"
+                target="_blank"
+                >find us</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  <!-- ================= NAVBAR: END ================= -->
+    <!-- ================= NAVBAR: END ================= -->
 
-  <!-- =================  SECTION - PG TITLE: START ================= -->
-   <header>
-   <section id="pg-title-menu" class="container-fluid row d-flex align-items-center  pg-title">
+    <!-- =================  SECTION - PG TITLE: START ================= -->
+    <header>
+      <section
+        id="pg-title-menu"
+        class="container-fluid row d-flex align-items-center pg-title"
+      >
         <div class="container">
-            <h1 class="fs-1">our menu</h1>
-            <h2 class="fs-2">
-                serving up the best brews, bites & vibes in town
-            </h2>
-            <a href="https://drive.google.com/file/d/15ucLNqXxd2icynrF0D05XTB2kp6avUDJ/view?usp=sharing"target="_blank" class="btn btn-lg mt-3 col-lg-3">download menu</a>
+          <h1 class="fs-1">our menu</h1>
+          <h2 class="fs-2">serving up the best brews, bites & vibes in town</h2>
+          <a
+            href="https://drive.google.com/file/d/15ucLNqXxd2icynrF0D05XTB2kp6avUDJ/view?usp=sharing"
+            target="_blank"
+            class="btn btn-lg mt-3 col-lg-3"
+            >download menu</a
+          >
         </div>
-    </section>
-    </header>
-  <!-- =================  SECTION - PG TITLE: START ================= -->
-
-  <main class="container-fluid">
-    <!-- ================= COFFEE SECTION: START ================= -->
-    <section id="menu-coffee-types" class="container ">
-      <!-- Section Heading -->
-      <div class="row section-heading-menu ">
-        <h2 class="fs-2">coffee</h2>
-        <p class=""><strong>available as lattes, cappuccinos, flat whites & more — also in pure blend if you’re feeling basic 😉</strong></p>
-        <p><strong>** all coffees also available in pure blend</strong></p>
-      </div>
-      
-      <!-- Coffee Types -->
-      <ul class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-4 g-4 my-4 mx-3 ">
-        <li >
-          <h3 class="fs-5 menu-item-name">Latte 5.5</h3>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">Flat White 5.5</h3>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">Piccolo 5.5</h3>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">Americano 5.5</h3>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">Mocha 5.5</h3>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">Espresso 5.5</h3>
-        </li>
-        <li>
-          <h3 class="fs-5 menu-item-name">Cappuccino 5.5</h3>
-        </li>
-      </ul>
-        </section>
-        <!-- ================= COFFEE SECTION: END ================= -->
-
-        <!-- ================= NOW BREWING FLAVOURS: START ================= -->
-     <section id="menu-coffee-flavours" class="container ">
-      <!-- Section Heading -->
-      <div class="row section-heading-menu ">
-        <h2 class="fs-2">flavours now brewing in store</h2>
-        <p><strong>bold, boujee, and barista-approved</strong></p>
-        <p><strong>** ask our baristas for today’s featured flavours</strong></p>
-      </div>
-      <!-- Flavours List -->
-      <ul class="row row-cols-lg-5 row-cols-md-3 row-cols-3 g-4 my-4 mx-3 ">
-        <li>
-          <h3 class="fs-5 menu-item-name">🥥🍫 Toasted Coconut Mocha</h3>
-          <p class="menu-item-description">
-        Smooth. Silky. Escape the study stress & "mid asf" Melb weather. One of our cult faves.
-          </p>
-        </li>
-        <li>
-          <h3 class="fs-5 menu-item-name">🥮 Holy Caramel Fudge</h3>
-          <p class="menu-item-description">A divine dose of gooey caramel & fudge. Pray you can handle it.</p>
-        </li>
-        <li>
-          <h3 class="fs-5 menu-item-name">🇮🇪🥃 Irish Cream</h3>
-          <p class="menu-item-description">Like a wink from your barista with a flask</p>
-        </li>
-        <li>
-          <h3 class="fs-5 menu-item-name">🌰🍥 Cinnamon Hazelnut Creme</h3>
-                <p class="menu-item-description">Cozy meets crunchy, with cinnamon sass</p>
-        </li>
-        <li>
-          <h3 class="fs-5 menu-item-name">🍦 Dutch Vanilla</h3>
-          <p class="menu-item-description">Smooth, clean, and a little too perfect</p>
-        </li>
-        <li>
-          <h3 class="fs-5 menu-item-name">✨ The Aurora Pour-ealis</h3>
-          <p class="menu-item-description">Celestial layers of flavor. Northern lights in your latte</p>
-        </li>
-        <li>
-          <h3 class="fs-5 menu-item-name">🍰 Tiramisu</h3>
-          <p class="menu-item-description">The dessert that flirts back</p>
-        </li>
-      </ul>
-      <a href="#" class="btn btn-lg  mt-3">shop our whole range</a>
       </section>
-        <!-- ================= NOW BREWING FLAVOURS: END ================= -->
+    </header>
+    <!-- =================  SECTION - PG TITLE: START ================= -->
 
-        <!-- ================= PURE BLENDS SECTION: START ================= -->
-        <section id="menu-coffee-pure" class="container ">
-      <!-- Section Heading -->
-      <div class="row section-heading-menu ">
-        <h2 class="fs-2">pure blends</h2>
-        <p><strong>event our “out of the ordinary” grounds are exceptional</strong></p>
-        <p><strong>even our classics go hard — single origins, house roasts, and organic faves</strong></p>
-        <p><strong>no frills. just beans. still elite.</strong></p>
-      </div>
-      <!-- Pure Blend List -->
-      <ul class="row row-cols-lg-5 row-cols-md-3 row-cols-3 g-4 my-4 mx-3">
-        <li >
-          <h3 class="fs-5 menu-item-name">🏠☕ House Blend</h3>
-          <p class="menu-item-description">Our signature brew. Balanced, bold, and full of main-character energy.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🇦🇺🌿☕ Australian Wombah Organic</h3>
-          <p class="menu-item-description">Locally grown, ethically sourced, and strong enough to wrestle a wombat (non-literally… we think).</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🇪🇹🤝🌱☕ Ethiopian Fair Trade Organic</h3>
-          <p class="menu-item-description">Fruity, floral, and ridiculously smooth. Mother Earth approved.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🇬🇹⛰️☕ Guatemalan</h3>
-          <p class="menu-item-description">Bright, zesty, and a little mysterious—like a coffee with a secret.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🏔️💙☕ Blue Mountain</h3>
-          <p class="menu-item-description">Premium Jamaican vibes. Smooth, rich, and cooler than your last Tinder date.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🇮🇹☕ Italian Espresso</h3>
-          <p class="menu-item-description">Straight to the point. No fluff. No drama. Just boom.</p>
-        </li>
-      </ul>
-      <a href="#" class="btn btn-lg mt-3">shop our range</a> 
-        </section>
-        <!-- ================= PURE BLENDS SECTION: END ================= -->
+    <main class="container-fluid">
+      <!-- ================= COFFEE SECTION: START ================= -->
+      <section id="menu-coffee-types" class="container">
+        <!-- Section Heading -->
+        <div class="row section-heading-menu">
+          <h2 class="fs-2">coffee</h2>
+          <p class="">
+            <strong
+              >available as lattes, cappuccinos, flat whites & more — also in
+              pure blend if you’re feeling basic 😉</strong
+            >
+          </p>
+          <p><strong>** all coffees also available in pure blend</strong></p>
+        </div>
 
-        <!-- ================= OTHER DRINKS SECTION: START ================= -->
-        <section id="menu-other-drinks" class="container ">
-      <!-- Section Heading -->
-      <div class="row section-heading-menu ">
-        <h2 class="fs-2">other drinks</h2>
-        <p><strong>teas, brews & infusions for when coffee ain’t the vibe</strong></p>
-        <p><strong>refresh, relax, or revive—there’s a sip for every mood</strong></p>
-      </div>
-      <!-- Other Drinks List -->
-      <ul class="row row-cols-lg-5 row-cols-md-3 row-cols-3 g-4 my-4 mx-3">
-        <li >
-          <h3 class="fs-5 menu-item-name">🇬🇧🫖🍞 English Breakfast</h3>
-          <p class="menu-item-description">Classic black tea, robust and comforting. The perfect morning ritual.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🍋🫖🌫️ Earl Grey</h3>
-          <p class="menu-item-description">Fragrant black tea with a hint of bergamot. Sophisticated and soothing.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🌼💤🫖 Chamomile Dream</h3>
-          <p class="menu-item-description">Gentle floral notes to help you unwind and find your chill.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🌿❄️🫖 Peppermint Bliss</h3>
-          <p class="menu-item-description">Cool, refreshing, and perfect for a midday reset.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">❄️🍊🧣 Winter Warmer</h3>
-          <p class="menu-item-description">Spiced citrus blend to keep you cozy on chilly days.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🍑🌞🌳 Summer Orchard</h3>
-          <p class="menu-item-description">Fruity infusion bursting with peach and sunshine.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🍋🫚✨ Lemon Ginger Glow</h3>
-          <p class="menu-item-description">Zesty lemon and warming ginger for a vibrant pick-me-up.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🤗🌌🍫 Evening Hug</h3>
-          <p class="menu-item-description">Caffeine-free chocolatey comfort for winding down.</p>
-        </li>
-      </ul>
-        </section>
-        <!-- ================= OTHER DRINKS SECTION: END ================= -->
+        <!-- Coffee Types -->
+        <ul class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-4 g-4 my-4 mx-3">
+          <li>
+            <h3 class="fs-5 menu-item-name">Latte 5.5</h3>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">Flat White 5.5</h3>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">Piccolo 5.5</h3>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">Americano 5.5</h3>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">Mocha 5.5</h3>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">Espresso 5.5</h3>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">Cappuccino 5.5</h3>
+          </li>
+        </ul>
+      </section>
+      <!-- ================= COFFEE SECTION: END ================= -->
 
-        <!-- ================= FOOD SECTION: START ================= -->
-        <section id="menu-food" class="container ">
-      <!-- Section Heading -->
-      <div class="row section-heading-menu">
-        <h2 class="fs-2">food</h2>
-        <p><strong>bite into brekkie, brunch, and baked bliss</strong></p>
-        <p><strong>from cheeky wraps to sweet scrolls — we’ve got your cravings covered, hot or cold</strong></p>
-      </div>
-      <!-- Food List -->
-      <ul class="row row-cols-lg-5 row-cols-md-3 row-cols-3 g-4 my-4 mx-3">
-        <li >
-          <h3 class="fs-5 menu-item-name">🥑🍞 Smashed Avo on Sourdough</h3>
-          <p class="menu-item-description">With feta & dukkah. The brunch classic, done right.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🥓🍳 Chorizo & Egg Breakfast Roll</h3>
-          <p class="menu-item-description">Spicy chorizo, fluffy eggs, and a hit of house sauce.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🥞🍓 Buttermilk Pancakes</h3>
-          <p class="menu-item-description">Stacked with maple & berries for your sweet tooth.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🥣🍯 Granola Parfait</h3>
-          <p class="menu-item-description">Greek yogurt, honey, and crunchy granola layers.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🌯🌶️ Breakfast Burrito</h3>
-          <p class="menu-item-description">Scrambled eggs, salsa, and a morning kick.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🥐🌰 Almond Croissant</h3>
-          <p class="menu-item-description">Flaky, buttery, and filled with almond goodness.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🧀🥪 Ham & Cheese Croissant</h3>
-          <p class="menu-item-description">Classic comfort, melty and golden.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🍋🍰 Lemon Poppyseed Loaf</h3>
-          <p class="menu-item-description">Zesty, moist, and perfect with coffee.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🍫🍩 Cinnamon Scroll</h3>
-          <p class="menu-item-description">Swirled with cinnamon and topped with icing.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🥗🌱 Moroccan Couscous Salad</h3>
-          <p class="menu-item-description">Chickpeas, mint, and a citrusy zing.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🥪🥬 Chicken Caesar Wrap</h3>
-          <p class="menu-item-description">Grilled chicken, crisp lettuce, and creamy Caesar.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🥪🧀 Turkey, Cranberry & Brie Toastie</h3>
-          <p class="menu-item-description">Sweet, savory, and melty in every bite.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🥗🍠 Quinoa & Roasted Veggie Bowl</h3>
-          <p class="menu-item-description">Hearty, wholesome, and vegan-friendly.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🌯🌱 BBQ Pulled Jackfruit Wrap</h3>
-          <p class="menu-item-description">Vegan, smoky, and packed with flavor.</p>
-        </li>
-        <li >
-          <h3 class="fs-5 menu-item-name">🥪🥓 Classic Club Sandwich</h3>
-          <p class="menu-item-description">Triple stacked with all the classics.</p>
-        </li>
-      </ul>
-        </section>
-    <!-- ================= FOOD SECTION: END ================= -->
-  </main>
+      <!-- ================= NOW BREWING FLAVOURS: START ================= -->
+      <section id="menu-coffee-flavours" class="container">
+        <!-- Section Heading -->
+        <div class="row section-heading-menu">
+          <h2 class="fs-2">flavours now brewing in store</h2>
+          <p><strong>bold, boujee, and barista-approved</strong></p>
+          <p>
+            <strong>** ask our baristas for today’s featured flavours</strong>
+          </p>
+        </div>
+        <!-- Flavours List -->
+        <ul class="row row-cols-lg-5 row-cols-md-3 row-cols-3 g-4 my-4 mx-3">
+          <li>
+            <h3 class="fs-5 menu-item-name">🥥🍫 Toasted Coconut Mocha</h3>
+            <p class="menu-item-description">
+              Smooth. Silky. Escape the study stress & "mid asf" Melb weather.
+              One of our cult faves.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🥮 Holy Caramel Fudge</h3>
+            <p class="menu-item-description">
+              A divine dose of gooey caramel & fudge. Pray you can handle it.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🇮🇪🥃 Irish Cream</h3>
+            <p class="menu-item-description">
+              Like a wink from your barista with a flask
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🌰🍥 Cinnamon Hazelnut Creme</h3>
+            <p class="menu-item-description">
+              Cozy meets crunchy, with cinnamon sass
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🍦 Dutch Vanilla</h3>
+            <p class="menu-item-description">
+              Smooth, clean, and a little too perfect
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">✨ The Aurora Pour-ealis</h3>
+            <p class="menu-item-description">
+              Celestial layers of flavor. Northern lights in your latte
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🍰 Tiramisu</h3>
+            <p class="menu-item-description">The dessert that flirts back</p>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-lg mt-3">shop our whole range</a>
+      </section>
+      <!-- ================= NOW BREWING FLAVOURS: END ================= -->
 
-  <!-- ================= FOOTER: START ================= -->
-   <footer class="container-fluid py-4">
-      <div class="left-col col-lg-8 ">
-        <a href="./aboutus.html" id="footer-brand-name" class=" ">THE DRIP ROOM </a>
+      <!-- ================= PURE BLENDS SECTION: START ================= -->
+      <section id="menu-coffee-pure" class="container">
+        <!-- Section Heading -->
+        <div class="row section-heading-menu">
+          <h2 class="fs-2">pure blends</h2>
+          <p>
+            <strong
+              >event our “out of the ordinary” grounds are exceptional</strong
+            >
+          </p>
+          <p>
+            <strong
+              >even our classics go hard — single origins, house roasts, and
+              organic faves</strong
+            >
+          </p>
+          <p><strong>no frills. just beans. still elite.</strong></p>
+        </div>
+        <!-- Pure Blend List -->
+        <ul class="row row-cols-lg-5 row-cols-md-3 row-cols-3 g-4 my-4 mx-3">
+          <li>
+            <h3 class="fs-5 menu-item-name">🏠☕ House Blend</h3>
+            <p class="menu-item-description">
+              Our signature brew. Balanced, bold, and full of main-character
+              energy.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">
+              🇦🇺🌿☕ Australian Wombah Organic
+            </h3>
+            <p class="menu-item-description">
+              Locally grown, ethically sourced, and strong enough to wrestle a
+              wombat (non-literally… we think).
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">
+              🇪🇹🤝🌱☕ Ethiopian Fair Trade Organic
+            </h3>
+            <p class="menu-item-description">
+              Fruity, floral, and ridiculously smooth. Mother Earth approved.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🇬🇹⛰️☕ Guatemalan</h3>
+            <p class="menu-item-description">
+              Bright, zesty, and a little mysterious—like a coffee with a
+              secret.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🏔️💙☕ Blue Mountain</h3>
+            <p class="menu-item-description">
+              Premium Jamaican vibes. Smooth, rich, and cooler than your last
+              Tinder date.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🇮🇹☕ Italian Espresso</h3>
+            <p class="menu-item-description">
+              Straight to the point. No fluff. No drama. Just boom.
+            </p>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-lg mt-3">shop our range</a>
+      </section>
+      <!-- ================= PURE BLENDS SECTION: END ================= -->
+
+      <!-- ================= OTHER DRINKS SECTION: START ================= -->
+      <section id="menu-other-drinks" class="container">
+        <!-- Section Heading -->
+        <div class="row section-heading-menu">
+          <h2 class="fs-2">other drinks</h2>
+          <p>
+            <strong
+              >teas, brews & infusions for when coffee ain’t the vibe</strong
+            >
+          </p>
+          <p>
+            <strong
+              >refresh, relax, or revive—there’s a sip for every mood</strong
+            >
+          </p>
+        </div>
+        <!-- Other Drinks List -->
+        <ul class="row row-cols-lg-5 row-cols-md-3 row-cols-3 g-4 my-4 mx-3">
+          <li>
+            <h3 class="fs-5 menu-item-name">🇬🇧🫖🍞 English Breakfast</h3>
+            <p class="menu-item-description">
+              Classic black tea, robust and comforting. The perfect morning
+              ritual.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🍋🫖🌫️ Earl Grey</h3>
+            <p class="menu-item-description">
+              Fragrant black tea with a hint of bergamot. Sophisticated and
+              soothing.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🌼💤🫖 Chamomile Dream</h3>
+            <p class="menu-item-description">
+              Gentle floral notes to help you unwind and find your chill.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🌿❄️🫖 Peppermint Bliss</h3>
+            <p class="menu-item-description">
+              Cool, refreshing, and perfect for a midday reset.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">❄️🍊🧣 Winter Warmer</h3>
+            <p class="menu-item-description">
+              Spiced citrus blend to keep you cozy on chilly days.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🍑🌞🌳 Summer Orchard</h3>
+            <p class="menu-item-description">
+              Fruity infusion bursting with peach and sunshine.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🍋🫚✨ Lemon Ginger Glow</h3>
+            <p class="menu-item-description">
+              Zesty lemon and warming ginger for a vibrant pick-me-up.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🤗🌌🍫 Evening Hug</h3>
+            <p class="menu-item-description">
+              Caffeine-free chocolatey comfort for winding down.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- ================= OTHER DRINKS SECTION: END ================= -->
+
+      <!-- ================= FOOD SECTION: START ================= -->
+      <section id="menu-food" class="container">
+        <!-- Section Heading -->
+        <div class="row section-heading-menu">
+          <h2 class="fs-2">food</h2>
+          <p><strong>bite into brekkie, brunch, and baked bliss</strong></p>
+          <p>
+            <strong
+              >from cheeky wraps to sweet scrolls — we’ve got your cravings
+              covered, hot or cold</strong
+            >
+          </p>
+        </div>
+        <!-- Food List -->
+        <ul class="row row-cols-lg-5 row-cols-md-3 row-cols-3 g-4 my-4 mx-3">
+          <li>
+            <h3 class="fs-5 menu-item-name">🥑🍞 Smashed Avo on Sourdough</h3>
+            <p class="menu-item-description">
+              With feta & dukkah. The brunch classic, done right.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">
+              🥓🍳 Chorizo & Egg Breakfast Roll
+            </h3>
+            <p class="menu-item-description">
+              Spicy chorizo, fluffy eggs, and a hit of house sauce.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🥞🍓 Buttermilk Pancakes</h3>
+            <p class="menu-item-description">
+              Stacked with maple & berries for your sweet tooth.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🥣🍯 Granola Parfait</h3>
+            <p class="menu-item-description">
+              Greek yogurt, honey, and crunchy granola layers.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🌯🌶️ Breakfast Burrito</h3>
+            <p class="menu-item-description">
+              Scrambled eggs, salsa, and a morning kick.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🥐🌰 Almond Croissant</h3>
+            <p class="menu-item-description">
+              Flaky, buttery, and filled with almond goodness.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🧀🥪 Ham & Cheese Croissant</h3>
+            <p class="menu-item-description">
+              Classic comfort, melty and golden.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🍋🍰 Lemon Poppyseed Loaf</h3>
+            <p class="menu-item-description">
+              Zesty, moist, and perfect with coffee.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🍫🍩 Cinnamon Scroll</h3>
+            <p class="menu-item-description">
+              Swirled with cinnamon and topped with icing.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🥗🌱 Moroccan Couscous Salad</h3>
+            <p class="menu-item-description">
+              Chickpeas, mint, and a citrusy zing.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🥪🥬 Chicken Caesar Wrap</h3>
+            <p class="menu-item-description">
+              Grilled chicken, crisp lettuce, and creamy Caesar.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">
+              🥪🧀 Turkey, Cranberry & Brie Toastie
+            </h3>
+            <p class="menu-item-description">
+              Sweet, savory, and melty in every bite.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">
+              🥗🍠 Quinoa & Roasted Veggie Bowl
+            </h3>
+            <p class="menu-item-description">
+              Hearty, wholesome, and vegan-friendly.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🌯🌱 BBQ Pulled Jackfruit Wrap</h3>
+            <p class="menu-item-description">
+              Vegan, smoky, and packed with flavor.
+            </p>
+          </li>
+          <li>
+            <h3 class="fs-5 menu-item-name">🥪🥓 Classic Club Sandwich</h3>
+            <p class="menu-item-description">
+              Triple stacked with all the classics.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- ================= FOOD SECTION: END ================= -->
+    </main>
+
+    <!-- ================= FOOTER: START ================= -->
+    <footer class="container-fluid py-4">
+      <div class="left-col col-lg-8">
+        <a href="./aboutus.html" id="footer-brand-name" class=" "
+          >THE DRIP ROOM
+        </a>
         <a href="#" class="footer-link">site map</a>
         <a href="#" class="footer-link">Our privacy policy </a>
       </div>
       <div class="right-col col-lg-4">
         <div class="social-media-row-footer">
-          <p class="fw-bold  mx-4" id="footer-socials-heading">Stay Groovy 🍩</p>
+          <p class="fw-bold mx-4" id="footer-socials-heading">Stay Groovy 🍩</p>
           <div class="social-media-icons">
-            <a href="https://www.instagram.com/" target="_blank" title="this is a link to our instagram page in a new tab" class="fs-3" >
-              <i class="fa-brands fa-instagram" ></i>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              title="this is a link to our instagram page in a new tab"
+              class="fs-3"
+            >
+              <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://www.facebook.com/" target="_blank" title="this is a link to our facebook page in a new tab" class="fs-3">
-              <i class="fa-brands fa-facebook" ></i>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              title="this is a link to our facebook page in a new tab"
+              class="fs-3"
+            >
+              <i class="fa-brands fa-facebook"></i>
             </a>
           </div>
         </div>
         <div id="copyright-row" class="container">
-            <p id="footer-link-copyright">© 2025 The Drip Room. All rights reserved.</p>
+          <p id="footer-link-copyright">
+            © 2025 The Drip Room. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
-  <!-- ================= FOOTER: END ================= -->
+    <!-- ================= FOOTER: END ================= -->
 
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -7,6 +7,20 @@
   font-style: normal;
 }
 
+/* java script elements styling */
+.display {
+  width: 100%;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+
+#facts {
+  width: 100%;
+  padding: 20px;
+  text-align: justify;
+  text-align-last: left;
+}
+
 body {
   font-family: "Courier New", Courier, monospace;
   background-color: var(--primary-color);
@@ -222,8 +236,3 @@ footer a:hover {
 .fa-brands:hover {
   text-decoration: underline;
 }
-/* =========================
-  COPYRIGHT ROW
-  ========================= */
-
-/* ========== END OF FILE ========== */

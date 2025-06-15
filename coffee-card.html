@@ -61,14 +61,9 @@
     <link rel="stylesheet" href="./tablet.css" />
     <link rel="stylesheet" href="./widescreen.css" />
   </head>
-  <!-- =========================
-         HEAD: META & STYLESHEETS - END 
-    ========================== -->
+
   <body>
-    <!-- =========================
-         1. NAVBAR
-    ========================== -->
-    <nav class="navbar fixed-top navbar-expand-lg">
+    <nav class="navbar sticky-top navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand justify-content-start" href="#">
           <img
@@ -139,133 +134,30 @@
     <!-- =========================
          2. HERO SECTION
     ========================== -->
-    <header>
-      <section class="container-fluid row d-flex align-items-center pg-title">
-        <div class="container">
-          <h1 class="fs-1">JOIN THE DRIP SQUAD</h1>
-          <h2 class="fs-2">
-            Join our coffee cult—uhh... we mean rewards program—for the
-            sweetest, weirdest, most espresso-fueled perks in town.
-          </h2>
-        </div>
-      </section>
+    <header class="pg-title container-fluid">
+      <div class="container-fluid">
+        <h1 class="fs-1">JOIN THE DRIP SQUAD</h1>
+        <h2 class="fs-2">
+          Join our coffee cult—uhh... we mean rewards program—for the sweetest,
+          weirdest, most espresso-fueled perks in town.
+        </h2>
+      </div>
     </header>
 
     <main class="container-fluid">
-      <div class="section-heading py-3 px-2">
-        <h3 class="fs-3">COFFEE CARD & MEMBERSHIP SIGN UP</h3>
+      <div class="section-heading py-3">
+        <h2 class="fs-3">COFFEE CARD & MEMBERSHIP SIGN UP</h2>
       </div>
-      <!-- col-LEFT-side-->
-      <section id="contact-us" class="row align-items-center py-4 px-2">
-        <!-- col-LEFT-side -->
-        <div class="left-col col-lg-4 container">
-          <h2 class="fs-2">Coffee card discount card info</h2>
-          <p>
-            Anyone can join—just drop into the café or fill out the form below.
-            We won’t judge your caffeine intake. Probably.
-          </p>
-          <p>
-            The drip squad program is the best coffee card program in town...
-            Anyone is welcome to join, particularly Holmesglen students.
-          </p>
-          <h2 class="fs-2">BENEFITS</h2>
-          <p>
-            The Drip room is full of sweet, salty or questionable benefits (just
-            like our flavours).
-          </p>
-
-          <!-- table - benefits of membership -->
-          <table class="table table-striped drip-table">
-            <thead>
-              <!-- table headings-->
-              <tr>
-                <th>Benefits</th>
-                <th>Everyday People</th>
-                <th>Students (Hot Desk Heroes)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Discounted base drink prices</td>
-                <td>10% off ☕ EVERY 10TH COFFEE</td>
-                <td>15% off ☕🔥 EVERY 10TH COFFEE</td>
-              </tr>
-              <tr>
-                <td>Discounted FOOD prices</td>
-                <td>10% off - EVERY 10TH MEAL</td>
-                <td>15% off - EVERY 10TH meal</td>
-              </tr>
-              <tr>
-                <td>Discounted MERCH</td>
-                <td>✅ 5% DISCOUNTS ON MERCH DURING SALES</td>
-                <td>✅ FURTHER 5% OFF MEMBER DISCOUNT SALES</td>
-              </tr>
-              <tr>
-                <td>Access to PROTOTYPE flavors</td>
-                <td>✅ Yes</td>
-                <td>✅ Yes + pre-release 🎉</td>
-              </tr>
-              <tr>
-                <td>Study nook access - the bean bunker</td>
-                <td>✅ standard hours oNLY</td>
-                <td>✅ + AFTER HOURS</td>
-              </tr>
-              <tr>
-                <td>Priority event invites</td>
-                <td>❌</td>
-                <td>✅ + plus one 🎤</td>
-              </tr>
-              <tr>
-                <td>Birthday Discounts</td>
-                <td>✅ 15% OFF COFFEE ALL DAY (Max limit 2)</td>
-                <td>✅ drink + meal (15% off) - 1 ITEM EACH</td>
-              </tr>
-              <tr>
-                <td>Free Wi-Fi</td>
-                <td>✅ You bet</td>
-                <td>✅ You bet + AFTER HOURS</td>
-              </tr>
-            </tbody>
-          </table>
-          <h3 class="fs-3">student info</h3>
-          <p>
-            Leaving your assignments to the last minute ? Craving your 5th
-            coffee in a day because you have a unhealthy sleep schedule but
-            still need to afford rent?
-          </p>
-          <p>
-            Don't leave it to the last minute as you do with your assignments
-            (just like our web developer did). The earlier you sign up, the
-            bigger the savings!
-          </p>
-          <p>
-            Well look no further, because our coffee card has even more
-            discounts for students, simply follow the form instructions for our
-            student sign up form.
-          </p>
-          <p>
-            The Drip Room’s student drip card gets you next-level perks,
-            including discounts, bonus beans, and access to the “Study + Sip”
-            zone (a.k.a. the Bean Bunker).
-          </p>
-          <p>
-            Just tick the Student Tier on the form and flash your student ID
-            when you collect.
-          </p>
-          <h4 class="fs-4">Student discount coffee card elegibility</h4>
-          <h5 class="fs-5">
-            to sign up for our discount student coffee card, you will need the
-            following:
-          </h5>
-        </div>
-        <!-- col-RIGHT-side-->
-        <form class="right-col col-lg-6 container">
-          <h2 class="fs-2 fw-bold mb-4">
+      <!-- col-BENEFITS-side-->
+      <section id="coffee-card-signup" class="row row-cols-lg-2 row-cols-md-1 ">
+        <!-- col-FORM-side-->
+        <form class="col container">
+          <h3 class="fs-3 fw-bold mb-4">
             CREATE A VERY COOL NEW MEMBERSHIP WITH US 👇
-          </h2>
-          <h3 class="fs-4 mb-4">
-            FILL IN THE DETAILS TO SIGN UP TO OUR REWARDS PROGRAM
           </h3>
+          <h4 class="fs-4 mb-4">
+            FILL IN THE DETAILS TO SIGN UP TO OUR REWARDS PROGRAM
+          </h4>
           <label for="fname" class="form-label">first Name</label>
           <input
             type="text"
@@ -339,14 +231,117 @@
             SIGN UP 🚀
           </button>
         </form>
-        <!-- form end-->
+        <!-- FORM END-->
+
+        <!-- col-LEFT -->
+        <div class="col container">
+          <h4 class="fs-4">Coffee card discount card info</h4>
+          <p>
+            Anyone can join—just drop into the café or fill out the form below.
+            We won’t judge your caffeine intake. Probably.
+          </p>
+          <p>
+            The drip squad program is the best coffee card program in town...
+            Anyone is welcome to join, particularly Holmesglen students.
+          </p>
+          <h5 class="fs-5">BENEFITS</h5>
+          <p>
+            The Drip room is full of sweet, salty or questionable benefits (just
+            like our flavours).
+          </p>
+
+          <!-- table - benefits of membership -->
+          <table class="table table-striped drip-table">
+            <caption>
+              Membership Benefits Comparison
+            </caption>
+            <thead>
+              <!-- table headings-->
+              <tr>
+                <th>Benefits</th>
+                <th>Everyday People</th>
+                <th>Students (Hot Desk Heroes)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Discounted base drink prices</td>
+                <td>10% off ☕ EVERY 10TH COFFEE</td>
+                <td>15% off ☕🔥 EVERY 10TH COFFEE</td>
+              </tr>
+              <tr>
+                <td>Discounted FOOD prices</td>
+                <td>10% off - EVERY 10TH MEAL</td>
+                <td>15% off - EVERY 10TH meal</td>
+              </tr>
+              <tr>
+                <td>Discounted MERCH</td>
+                <td>✅ 5% DISCOUNTS ON MERCH DURING SALES</td>
+                <td>✅ FURTHER 5% OFF MEMBER DISCOUNT SALES</td>
+              </tr>
+              <tr>
+                <td>Access to PROTOTYPE flavors</td>
+                <td>✅ Yes</td>
+                <td>✅ Yes + pre-release 🎉</td>
+              </tr>
+              <tr>
+                <td>Study nook access - the bean bunker</td>
+                <td>✅ standard hours oNLY</td>
+                <td>✅ + AFTER HOURS</td>
+              </tr>
+              <tr>
+                <td>Priority event invites</td>
+                <td>❌</td>
+                <td>✅ + plus one 🎤</td>
+              </tr>
+              <tr>
+                <td>Birthday Discounts</td>
+                <td>✅ 15% OFF COFFEE ALL DAY (Max limit 2)</td>
+                <td>✅ drink + meal (15% off) - 1 ITEM EACH</td>
+              </tr>
+              <tr>
+                <td>Free Wi-Fi</td>
+                <td>✅ You bet</td>
+                <td>✅ You bet + AFTER HOURS</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="coffee-card-student-info">
+            <h5 class="fs-5">student info</h5>
+            <p>
+              Leaving your assignments to the last minute ? Craving your 5th
+              coffee in a day because you have a unhealthy sleep schedule but
+              still need to afford rent?
+            </p>
+            <p>
+              Don't leave it to the last minute as you do with your assignments
+              (just like our web developer did). The earlier you sign up, the
+              bigger the savings!
+            </p>
+            <p>
+              Well look no further, because our coffee card has even more
+              discounts for students, simply follow the form instructions for
+              our student sign up form.
+            </p>
+            <p>
+              The Drip Room’s student drip card gets you next-level perks,
+              including discounts, bonus beans, and access to the “Study + Sip”
+              zone (a.k.a. the Bean Bunker).
+            </p>
+            <p>
+              Just tick the Student Tier on the form and flash your student ID
+              when you collect.
+            </p>
+            <h5 class="fs-5">Student discount coffee card elegibility</h5>
+            <h6 class="fs-6">
+              to sign up for our discount student coffee card, you will need the
+              following:
+            </h6>
+          </div>
+        </div>
       </section>
-      <!-- ===== END CONTACT SECTION ===== -->
     </main>
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
     <footer class="container-fluid py-4">
       <div class="left-col col-lg-8">
         <a href="./aboutus.html" id="footer-brand-name" class=" "

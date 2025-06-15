@@ -1,6 +1,6 @@
-/* =========================
-  1. CSS RESETS & GLOBAL STYLES
-  ========================= */
+/* ==========================================================================
+   1. CSS RESET & GLOBAL STYLES
+   ========================================================================== */
 
 /* Box sizing reset */
 * {
@@ -13,21 +13,15 @@ p {
   padding: 0;
 }
 
-/* Body overflow */
+/* Enable scrolling if needed */
 body {
   overflow: auto;
 }
+/* ==========================================================================
+   2. GLOBAL COMPONENTS
+   ========================================================================== */
 
-/* =========================
-  2. GLOBAL LAYOUTS & SECTIONS
-  ========================= */
-
-/* Section spacing */
-section {
-  margin: 2% 0;
-}
-
-/* Unordered list: horizontal flex layout */
+/* Unordered lists: horizontal layout */
 ul {
   list-style: none;
   display: flex;
@@ -37,50 +31,59 @@ ul {
   text-align: left;
 }
 
-/* Section heading for menu */
-.section-heading-menu {
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 60%;
+/* Icon size */
+.icon {
+  width: 2.5rem;
 }
 
-/* Menu item name styling */
+/* Button spacing */
+.btn {
+  margin: 1% 0;
+}
+
+/* ==========================================================================
+   3. SECTION LAYOUTS
+   ========================================================================== */
+
+/* Default section spacing */
+section {
+  margin: 2% 0;
+}
+
+/* Section heading (menu page) */
+.section-heading-menu {
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Inner box structure */
+.inner-section-box {
+  height: fit-content;
+  margin-bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Menu item title style */
 .menu-item-name {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-/* Button margin */
-.btn {
-  margin: 1% 0;
+/* Coffee Card section text spacing */
+#coffee-card-student-info p {
+  margin-bottom: 4%;
 }
 
-/* Card body alignment */
-.card-body {
-  justify-content: flex-start;
-  text-align: left;
-}
+/* ==========================================================================
+   4. HERO & PAGE TITLE SECTIONS
+   ========================================================================== */
 
-/* Card footer styling */
-.card-footer {
-  background-color: white;
-  border: 0;
-}
-.card-footer .btn {
-  display: block;
-  margin-bottom: 8%;
-}
-
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
-}
-
-/* =========================
-  3. PAGE TITLE & HERO SECTIONS
-  ========================= */
-
-/* Hero section full viewport height */
+/* Hero section: full screen height, left-aligned */
 #hero {
   height: 100vh;
   display: flex;
@@ -90,44 +93,49 @@ ul {
   text-align: left;
 }
 
-/* Page title section */
+/* Page title section: center-aligned with pastel background */
 .pg-title {
-  height: 55vh;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-self: center;
   justify-content: center;
-  overflow: hidden; /* prevents content spill */
+  text-align: left;
+  height: auto;
+  padding:4rem 0rem;
 }
 
 .pg-title img {
-  max-width: 100%; /* Don't go beyond column */
-  height: 60%; /* Stay inside 45vh container */
+  width:10%;
+  height:auto;
+  
 }
 
-/* =========================
-  4. INNER SECTION BOXES & HEADINGS
-  ========================= */
+/* ==========================================================================
+   5. CARD COMPONENTS
+   ========================================================================== */
 
-.inner-section-box {
-  height: fit-content;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-bottom: 15%;
+/* Card image top cropping */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
 }
 
-/* =========================
-  5. ICONS & IMAGES
-  ========================= */
-
-.icon {
-  width: 2.5rem;
+/* Card footer styles */
+.card-footer {
+  background-color: white;
+  border: 0;
 }
 
-/* =========================
-  6. SIDENAV STYLES
-  ========================= */
+.card-footer .btn {
+  display: block;
+  margin-bottom: 8%;
+}
 
+/* ==========================================================================
+   6. SIDENAV
+   ========================================================================== */
+
+/* Sidenav row layout */
 #sidenav .col {
   width: 100%;
   display: flex;
@@ -139,17 +147,7 @@ ul {
   margin: 4px 0;
 }
 
-#sidenav .section-heading {
-  padding: 2px 0;
-}
-
-#sidenav img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
+/* Sidenav links */
 #sidenav a {
   font-family: monospace;
   align-self: flex-start;
@@ -157,18 +155,9 @@ ul {
   flex-direction: column;
 }
 
-/* Note: Fixed selector typo from #Sidenav to #sidenav */
-#sidenav .col:hover {
-  padding: 0;
-}
-
-#sidenav a.active {
-  padding: 0;
-}
-
-/* =========================
-  7. CONTACT US SECTION
-  ========================= */
+/* ==========================================================================
+   7. CONTACT SECTION
+   ========================================================================== */
 
 #contact-us {
   display: flex;
@@ -177,10 +166,11 @@ ul {
   align-items: flex-end;
 }
 
-/* =========================
-  8. FOOTER STYLES
-  ========================= */
+/* ==========================================================================
+   8. FOOTER
+   ========================================================================== */
 
+/* Footer row layout */
 footer {
   display: flex;
   flex-direction: row;
@@ -188,6 +178,7 @@ footer {
   align-items: center;
 }
 
+/* Footer left column */
 footer .left-col {
   display: flex;
   flex-direction: column;
@@ -195,6 +186,7 @@ footer .left-col {
   align-items: flex-start;
 }
 
+/* Footer right column */
 footer .right-col {
   display: flex;
   flex-direction: column;
@@ -202,7 +194,7 @@ footer .right-col {
   align-items: flex-end;
 }
 
-/* Social media row in footer */
+/* Social media icons row in footer */
 .social-media-row-footer {
   display: flex;
   flex-direction: row;

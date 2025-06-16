@@ -101,13 +101,12 @@ section {
   justify-content: center;
   text-align: left;
   height: auto;
-  padding:4rem 0rem;
+  padding: 4rem 0rem;
 }
 
 .pg-title img {
-  width:10%;
-  height:auto;
-  
+  width: 10%;
+  height: auto;
 }
 
 /* ==========================================================================

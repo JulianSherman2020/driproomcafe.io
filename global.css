@@ -1,10 +1,15 @@
 /* ==========================================================================
    1. CSS RESET & GLOBAL STYLES
    ========================================================================== */
-
 /* Box sizing reset */
 * {
   box-sizing: border-box;
+}
+
+/* css general reset */
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove default margin and padding from paragraphs */
@@ -18,7 +23,7 @@ body {
   overflow: auto;
 }
 /* ==========================================================================
-   2. GLOBAL COMPONENTS
+   2. GLOBAL LAYOUTS
    ========================================================================== */
 
 /* Unordered lists: horizontal layout */
@@ -38,7 +43,7 @@ ul {
 
 /* Button spacing */
 .btn {
-  margin: 1% 0;
+  margin: 0.5rem 0;
 }
 
 /* ==========================================================================
@@ -105,7 +110,8 @@ section {
 }
 
 .pg-title img {
-  width: 10%;
+  width: 100%;
+  max-width: 150px;
   height: auto;
 }
 
@@ -127,7 +133,7 @@ section {
 
 .card-footer .btn {
   display: block;
-  margin-bottom: 8%;
+  margin-bottom: 1rem;
 }
 
 /* ==========================================================================

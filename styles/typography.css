@@ -1,0 +1,27 @@
+/* ========== 1. TYPOGRAPHY ========== */
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--primary-color);
+}
+
+.fs-1 { font-size: 2.25rem; }
+.fs-2 { font-size: 1.875rem; }
+.fs-3 { font-size: 1.5rem; }
+.fs-4 { font-size: 1.25rem; }
+.fs-5 { font-size: 1rem; }
+.fs-6 { font-size: 0.875rem; }
+
+/* ICONOGRAPHY */ 
+.icon {
+  width: 2.5rem;
+}
+
+.fa-brands:hover {
+  text-decoration: underline;
+}
+
+/* Menu item title style */
+.menu-item-name {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

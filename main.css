@@ -1,0 +1,12 @@
+/* main.css */
+@import url('./styles/colours.css');
+@import url('styles/layout.css');
+@import url('styles/responsive.css');
+@import url('styles/sections.css');
+@import url('styles/typography.css');
+@import url('styles/utilities.css');
+/* components */
+@import url('styles/components/buttons.css');
+@import url('styles/components/cards.css');
+@import url('styles/components/footer.css');
+@import url('styles/components/nav.css');

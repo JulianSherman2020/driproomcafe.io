@@ -1,0 +1,106 @@
+/* MOBILE */
+@media (max-width: 480px) {
+  /* ======= GLOBALS ======= */
+  /* TYPOGRAPHY -  utility classes */
+.fs-1 { font-size: 2.25rem; }
+.fs-2 { font-size: 1.875rem; }
+.fs-3 { font-size: 1.5rem; }
+.fs-4 { font-size: 1.25rem; }
+.fs-5 { font-size: 1rem; }
+.fs-6 { font-size: 0.875rem; }
+  /* ======= NAVIGATION ======= */
+
+  /* ======= HERO SECTION ======= */
+  #hero {
+    height: 100vh;
+  }
+
+  /* COMPONENTS */
+  .card-img-top {
+    height: 150px;
+    object-fit: contain;
+  }
+  /* ======= BUTTONS ======= */
+  .btn {
+    font-size: 12px; /* Smaller font for mobile buttons */
+    width: 100%; /* Full-width buttons for easier tapping */
+  }
+
+  /* ======= CARD & IMAGES ======= */
+  .bg-image {
+    background-image: url("imgs/placeholder.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* ======= ICONS ======= */
+  .icon {
+    width: 2.5rem;
+  }
+
+  /* ======= CONTACT US SECTION ======= */
+  #contact-us {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ======= FOOTER STYLES ======= */
+
+  #footer-link-copyright {
+    font-size: 0.8rem;
+    text-align: end;
+  }
+
+.fa-brands {
+    width:0.8em;
+  }
+
+  .social-media-row-footer {
+  color: white;
+}
+
+.social-media-row-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-socials-heading {
+    font-size: 0.9rem;
+  }
+
+}
+/* TABLET */
+@media (min-width: 481px) and (max-width: 768px) {
+  .section-heading-menu {
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+  }
+
+  /* Add horizontal margin to navigation items */
+  .nav-item {
+    margin: 0 1%;
+  }
+
+  /* Reduce font size for navbar links */
+  .navbar-nav a {
+    font-size: 12px;
+  }
+}
+/* WIDESCREEN */
+/* ===========================
+    Desktop (Widescreen)
+    Screens wider than 1200px
+    =========================== */
+@media (min-width: 1201px) {
+  /* Add widescreen-specific styles here */
+}
+/* =========================== 
+    Desktop (Standard)
+    Screens between 769px and 1200px
+    =========================== */
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* Add standard desktop styles here */
+}

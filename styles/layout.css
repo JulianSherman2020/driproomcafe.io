@@ -1,0 +1,50 @@
+/* ========== 1. GLOBAL LAYOUT STYLES & RESET ========== */
+/* Box sizing reset */
+* {
+  box-sizing: border-box;
+}
+/* General reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+/* Enable scrolling if needed */
+body {
+  overflow: auto;
+}
+
+header {
+  background-color: var(--primary-color);
+  border: 1px solid rgb(16, 16, 16);
+}
+
+section {
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  margin: 2% 0;
+}
+
+.pg-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  height: auto;
+  padding: 4rem 0rem;
+}
+
+.pg-title img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}

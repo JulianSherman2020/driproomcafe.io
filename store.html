@@ -1,103 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <!-- =========================
-         HEAD: META & STYLESHEETS
-    ========================== -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>the drip room - store</title>
-    <link rel="icon" type="image/x-icon" href="imgs/logos/Mug-Walking.svg">
-    <!-- Bootstrap Stylesheet via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- google fonts & font awesome -->
-    <script src="https://kit.fontawesome.com/ef7b8b5072.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- Custom CSS SHEETS -->
-    <!-- colors -->
-    <link rel="stylesheet" href="./color-pallete.css">
-    <!-- layout & spacing -->
-    <link rel="stylesheet" href="./layout.css">
-    <!-- borders & color application -->
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="google-site-verification"
+    content="PyQyKo8ZLTrybe5kJW9ABOrEU-OqsE7NWz8Tdvn4Pzg"
+  />
+  <title>the driproom cafe - store</title>
+  <link rel="icon" type="image/x-icon" href="/htdocs/imgs/Mug-Walking.svg" />
+  <!--   BOOTSTRAP - Stylesheet via CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+  />
+  <!-- FONT AWESOME Stylesheet via CDN -->
+  <script
+    src="https://kit.fontawesome.com/ef7b8b5072.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/htdocs/main.css"/>
+<!-- ========== GOOGLE - ANALYTICS ========== -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-0XD3Q5RFWE"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <!-- responsive style sheets -->
-    <link rel="stylesheet" href="./mobile.css">
-    <link rel="stylesheet" href="./tablet.css">
-    <link rel="stylesheet" href="./widescreen.css">
+    gtag("config", "G-0XD3Q5RFWE");
+  </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XD3Q5RFWE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0XD3Q5RFWE');
-</script>
 
 <body>
-<!-- ================= NAVBAR ================= -->
-  <nav class="navbar sticky-top navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand justify-content-start" href="#">
-              <img src="/imgs/logos/Mug-Walking.svg" class="icon me-3"  alt="brand logo for the drip room cafe moorabbin walking cartoon like mug" />
-            the drip room
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <!-- NAV-LINKS Section -->
-            <ul class="navbar-nav ">
-                <li class="nav-item">
-                <a class="nav-link " href="./index.html">home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active"  aria-current="page"  href="./store.html">store</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./menu.html">menu</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./coffee-card.html">coffee card</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">venue</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">about us</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./contact.html">contact us</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">cart</a>
-                </li>
-                <li class="nav-item btn-find-us">
-                <a class="nav-link" href="https://maps.app.goo.gl/69LfUh5GH5MVbF5j7" target="_blank">find us</a>
-                </li>
-            </ul>
-            </div>
-        </div>
-  </nav>
-<!-- =============== END NAVBAR =============== -->
-
-<!-- =============== PG TITLE SECTION =============== -->
+<!-- NAV-BAR-->
+<nav class="navbar sticky-top navbar-expand-lg">
+    <div class="container-fluid">
+    <a class="navbar-brand justify-content-start" href="./index.html">
+        <img
+        src="/htdocs/imgs/Mug-Walking.svg"
+        class="icon"
+        alt="The Drip Room Cafe logo - walking mug"
+        />
+        the drip room
+    </a>
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+    >
+        <!-- NAV-LINKS Section -->
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link"  href="./index.html"
+            >home</a
+            >
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./store.html">store</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./menu.html">menu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./coffee-card.html">coffee card</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./venue.html">venue </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./about.html">about us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./contact.html">contact us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./cart.html">cart</a>
+        </li>
+        <li class="nav-item">
+            <a
+            class="nav-link nav-find-us"
+            href="https://maps.app.goo.gl/69LfUh4Gh4MVbF5j7"
+            target="_blank"
+            >find us</a
+            >
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
 <header class="pg-title container-fluid"> 
-    <div class="container-fluid d-flex flex-row">
+    <div class="container d-flex flex-row">
         <div class="pg-title-descrip">
             <h1 class="fs-1">store</h1>
             <h2 class="fs-2">check out our coffee products</h2>
         </div>
-            <img src="./imgs/Retro-Groovy-Coffee-Clipart-Bundle/Characters/SVG/Kettle-Walking.svg" class="flip-horizontal col-4" alt="">
+            <img src="/htdocs/imgs/Kettle-Walking.svg" class="flip-x col-4" alt="">
     </div>
 </header>
-<!-- ============= END PG TITLE SECTION ============= -->
 
-<!-- =============== SIDEBAR =============== -->
+<!-- ============= START - SIDEBAR ============== -->
 <main class="row container-fluid">
   <div class="col-2  ">
     <div id="sidenav" class="sticky-top ">
@@ -144,7 +170,6 @@
     </div>
   </div>
 <!-- ============= END SIDEBAR ============== -->
-
 <!-- ============ MAIN CONTENT ============== -->
 <div class="right-col col-10">
 <!-- ========== FLAVOURED COFFEE SECTION ========== -->
@@ -163,7 +188,7 @@
     <div class="card h-100">
             <img src="./imgs/optimised/product-imgs/caramel/flavour-salted-caramel.webp" class="card-img-top" alt="holy caramel fudge product image">
             <div class="card-body">
-                <h4 class="card-title">🧂🍫 Sea Salt Caramel Mocha</h4>
+                <h4 class="fs-4">🧂🍫 Sea Salt Caramel Mocha</h4>
                 <p class="card-text">Salty, sweet, and mocha’d to perfection. A tidal wave in a cup.</p>
             </div>
             <div class="card-footer">
@@ -177,7 +202,7 @@
         <div class="card h-100  ">
             <img src="./imgs/optimised/product-imgs/caramel/flavoured_coffee-choc_fudge.webp" class="card-img-top" alt="holy caramel fudge product image">
             <div class="card-body">
-                <h4 class=" card-title">🥮 Holy Caramel Fudge</h4>
+                <h4 class="fs-4">🥮 Holy Caramel Fudge</h4>
                 <p class="card-text">A divine dose of gooey caramel & fudge. Pray you can handle it.</p>
             </div>
             <div class="card-footer">
@@ -191,7 +216,7 @@
         <div class="card  h-100">
             <img src="./imgs/optimised/product-imgs/caramel/coffee_flavour-butterscotch_toffee.webp" class="card-img-top" alt="holy caramel fudge product image">
             <div class="card-body">
-                <h5 class="card-title">🍬 Butterscotch Toffee </h5>
+                <h4 class="fs-4">🍬 Butterscotch Toffee </h4>
                 <p class="card-text">Grandma’s candy dish got a glow-up</p>
             </div>
             <div class="card-footer">
@@ -205,7 +230,7 @@
         <div class="card h-100 ">
             <img src="./imgs/optimised/product-imgs/caramel/coffee_flavour-creme_bruele.webp" class="card-img-top" alt="holy caramel fudge product image">
             <div class="card-body">
-                <h5 class="card-title">🍮 Creme Brulee</h5>
+                <h4 class="fs-4">🍮 Creme Brulee</h4>
                 <p class="card-text">
                     Creamy, crackly, caramelized dreams</p>
             </div>
@@ -220,12 +245,12 @@
         <div class="card h-100">
             <img src="./imgs/optimised/product-imgs/caramel/coffee_flavour-apple_caramel.webp" class="card-img-top" alt="caramel apple product image">
             <div class="card-body">
-                <h5 class="card-title">🍏🍯 Caramel Apple</h5>
+                <h4 class="fs-4">🍏🍯 Caramel Apple</h4>
                 <p class="card-text">Fall fair nostalgia in every sip. No stick, no mess.</p>
             </div>
             <div class="card-footer">
                 <a href="#" class="btn  ">add to cart</a>
-                    <a href="#" class="btn ">more info</a>
+                <a href="#" class="btn ">more info</a>
             </div>
         </div>
     </div>
@@ -234,7 +259,7 @@
         <div class="card h-100">
             <img src="./imgs/optimised/product-imgs/caramel/coffee_flavour-salted_pretzel.webp" class="card-img-top" alt="salted pretzel macchiato product image">
             <div class="card-body">
-                <h5 class="card-title">🥨☕ Salted Pretzel Macchiato</h5>
+                <h4 class="fs-4">🥨☕ Salted Pretzel Macchiato</h4>
                 <p class="card-text">Sweet meets salty in a crispy caffeine hug.</p>
             </div>
                 <div class="card-footer">
@@ -261,7 +286,7 @@
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/choc-dessert/coffee_flavour-choc_truffle.webp" class="card-img-top" alt="chocolate truffle product image">
         <div class="card-body">
-            <h5 class="card-title">🍫 Chocolate Truffle</h5>
+            <h4 class="fs-4">🍫 Chocolate Truffle</h4>
             <p class="card-text">Rich, luxurious, and just a little seductive.</p>
         </div>
         <div class="card-footer">
@@ -275,7 +300,7 @@
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/choc-dessert/coffee_flavour-choc_mint.webp" class="card-img-top" alt="chocolate mint product image">
         <div class="card-body">
-            <h4 class=" card-title">🍫🌿 Chocolate Mint</h4>
+            <h4 class=" fs-4">🍫🌿 Chocolate Mint</h4>
             <p class="card-text">Like sipping a classy Thin Mint.</p>
         </div>
         <div class="card-footer">
@@ -290,7 +315,7 @@
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/choc-dessert/coffee-flavour_smores.webp" class="card-img-top" alt="campfire s’mores cappuccino product image">
         <div class="card-body">
-            <h5 class="card-title">🔥🍫🍪 Campfire S’mores Cappuccino</h5>
+            <h4 class="fs-4">🔥🍫🍪 Campfire S’mores Cappuccino</h4>
             <p class="card-text">Smoky, melty, gooey—no tent required.</p>
         </div>
         <div class="card-footer">
@@ -304,7 +329,7 @@
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/choc-dessert/coffee_flavour-tiramsu.webp" class="card-img-top" alt="tiramisu product image">
         <div class="card-body">
-            <h5 class="card-title">🍰 Tiramisu</h5>
+            <h4 class="fs-4">🍰 Tiramisu</h4>
             <p class="card-text">The dessert that flirts back.</p>
         </div>
         <div class="card-footer">
@@ -318,7 +343,7 @@
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/choc-dessert/coffe_flavour-churros-dusted-with-sugar_60119812.webp" class="card-img-top" alt="churro crunch product image">
         <div class="card-body">
-            <h5 class="card-title">🍩☕ Churro Crunch</h5>
+            <h4 class="fs-4">🍩☕ Churro Crunch</h4>
             <p class="card-text">Cinnamon sugar dunked in creamy espresso.</p>
         </div>
         <div class="card-footer">
@@ -332,7 +357,7 @@
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/choc-dessert/coffee_flavour-cinnamon.webp" class="card-img-top" alt="cinnamon roll product image">
         <div class="card-body">
-            <h5 class="card-title">🍥⚡ Cinnamon Roll</h5>
+            <h4 class="fs-4">🍥⚡ Cinnamon Roll</h4>
             <p class="card-text">Sticky swirl energy in liquid form.</p>
         </div>
         <div class="card-footer">
@@ -346,7 +371,7 @@
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/choc-dessert/coffee-flavour-blueberry_muffin.webp" class="card-img-top" alt="blueberry muffin product image">
         <div class="card-body">
-            <h5 class="card-title">🫐🧁 Blueberry Muffin</h5>
+            <h4 class="fs-4">🫐🧁 Blueberry Muffin</h4>
             <p class="card-text">Sunday brunch in a cup.</p>
         </div>
         <div class="card-footer">
@@ -360,7 +385,7 @@
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/choc-dessert/coffee_flavour-marshmellow.webp" class="card-img-top" alt="marshmallow product image">
         <div class="card-body">
-            <h5 class="card-title">☁️🍬 Marshmallow</h5>
+            <h4 class="fs-4">☁️🍬 Marshmallow</h4>
             <p class="card-text">Soft. Sweet. Almost suspiciously innocent.</p>
         </div>
         <div class="card-footer">
@@ -387,7 +412,7 @@
     <div class="card h-100">
     <img src="./imgs/optimised/product-imgs/nutty/coffee_flavour-hazelnut.webp" class="card-img-top" alt="smooth hazelnut product image">
     <div class="card-body">
-        <h5 class=" card-title">🌰 Smooth Hazelnut</h5>
+        <h4 class=" fs-4">🌰 Smooth Hazelnut</h4>
         <p class="card-text">Basic, but like, in a cashmere sweater way.</p>
     </div>
     <div class="card-footer">
@@ -402,7 +427,7 @@
     <div class="card h-100">
     <img src="./imgs/optimised/product-imgs/nutty/coffee_flavour-macademia.webp" class="card-img-top" alt="chocolate macadamia product image">
     <div class="card-body">
-        <h5 class=" card-title">🌰🍫 Chocolate Macadamia</h5>
+        <h4 class=" fs-4">🌰🍫 Chocolate Macadamia</h4>
         <p class="card-text">Doubled down on nuttiness and cocoa.</p>
     </div>
         <div class="card-footer">
@@ -429,7 +454,7 @@
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/creamy/coffee_flavour-dutch_vanilla.webp" class="card-img-top" alt="dutch vanilla product image">
         <div class="card-body">
-            <h5 class="card-title">🍦 Dutch Vanilla</h5>
+            <h4 class="fs-4">🍦 Dutch Vanilla</h4>
             <p class="card-text">Smooth, clean, and a little too perfect.</p>
         </div>
             <div class="card-footer">
@@ -444,7 +469,7 @@
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/creamy/coffee-flavour_apple_custard_delight.webp" class="card-img-top" alt="creme brulee product image">
         <div class="card-body">
-            <h5 class="card-title">🍎 🍮 Caramel Apple Custard Delight</h5>
+            <h4 class="fs-4">🍎 🍮 Caramel Apple Custard Delight</h4>
             <p class="card-text">
 Like grandma’s pie… if grandma was a barista with sass.</p>
         </div>
@@ -473,7 +498,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/floral-fruity/coffee_flavour-lavender_honey.webp" class="card-img-top" alt="lavender honey product image">
         <div class="card-body">
-            <h5 class="card-title">💐🍯 Lavender Honey</h5>
+            <h4 class="fs-4">💐🍯 Lavender Honey</h4>
             <p class="card-text">Chill in a cup. Soft and slightly enchanted.</p>
         </div>
             <div class="card-footer">
@@ -488,7 +513,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/floral-fruity/coffee-flavour_bananna_bread.webp" class="card-img-top" alt="brown sugar banana product image">
         <div class="card-body">
-            <h5 class="card-title">🍌🍯 Brown Sugar Banana</h5>
+            <h4 class="fs-4">🍌🍯 Brown Sugar Banana</h4>
             <p class="card-text">Banana bread, but make it buzz.</p>
             
         </div>
@@ -518,7 +543,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
         <div class="card h-100">
             <img src="./imgs/optimised/product-imgs/boozy/coffee_flavour-irish_creme.webp" class="card-img-top" alt="irish cream product image">
             <div class="card-body">
-                <h5 class="card-title">🇮🇪🥃 Irish Cream</h5>
+                <h4 class="fs-4">🇮🇪🥃 Irish Cream</h4>
                 <p class="card-text">Like a wink from your barista with a flask.</p>
             </div>
                 <div class="card-footer">
@@ -532,7 +557,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/boozy/coffee_flavour-jack_daniels.webp" class="card-img-top" alt="jack daniels product image">
         <div class="card-body">
-            <h5 class="card-title">🥃🔥 Jack Daniels</h5>
+            <h4 class="fs-4">🥃🔥 Jack Daniels</h4>
             <p class="card-text">Whiskey warmth in a bold, no-apologies brew.</p>
         </div>
             <div class="card-footer">
@@ -546,7 +571,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/boozy/coffee_flavour-amaretto.webp" class="card-img-top" alt="amaretto amour product image">
         <div class="card-body">
-            <h5 class="card-title">🍒🥃 Amaretto Amour</h5>
+            <h4 class="fs-4">🍒🥃 Amaretto Amour</h4>
             <p class="card-text">Listed twice—because you’ll want it twice.</p>
         </div>
             <div class="card-footer">
@@ -560,7 +585,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/boozy/coffee_flavour-affagato.webp" class="card-img-top" alt="almond joy affogato product image">
         <div class="card-body">
-            <h5 class="card-title">🌰🍦 Almond Joy Affogato</h5>
+            <h4 class="fs-4">🌰🍦 Almond Joy Affogato</h4>
             <p class="card-text">Dessert, but caffeinated and cheeky.</p>
         </div>
             <div class="card-footer">
@@ -586,7 +611,9 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/special-weird-tropicals/coffee_flavour-coconut.webp" class="card-img-top" alt="toasted coconut product image">
         <div class="card-body">
-        <h5 class="class-title"></h5>🥥🍫 Toasted Coconut<h5 class="class-title"></h5>
+        <h4 class="fs-4">
+            🥥🍫 Toasted Coconut
+        </h4>
             <p class="card-text">Like a holiday romance in a cup.</p>
         </div>
             <div class="card-footer">
@@ -599,7 +626,8 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/special-weird-tropicals/coffee_flavour-maple_bacon.webp" class="card-img-top" alt="maple bacon product image">
         <div class="card-body">
-        <h5 class="class-title"></h5>🥓🍁 Maple Bacon<h5 class="class-title"></h5>
+        <h4 class="fs-4"></h4>🥓🍁 Maple Bacon
+        </h4>
             <p class="card-text">Sweet, salty, and a bit unhinged.</p>
         </div>
             <div class="card-footer">
@@ -612,7 +640,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/special-weird-tropicals/coffee_flavour-chilli.webp" class="card-img-top" alt="spicy chilli product image">
         <div class="card-body">
-        <h5 class="class-title">🌶️☕ Spicy Chilli
+        <h4 class="fs-4">🌶️☕ Spicy Chilli</h4>
             <p class="card-text">This brew bites back.</p>
         </div>
             <div class="card-footer">
@@ -641,7 +669,9 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/special-weird-tropicals/coffee_flavour-heavenly_delight.webp" class="card-img-top" alt="heavenly delight product image">
         <div class="card-body">
-        <h5 class="class-title">😇 Heavenly Delight<h5 class="class-title">
+        <h4 class="fs-4">
+            😇 Heavenly delight
+            </h4>
             <p class="card-text">So good it feels illegal.</p>
         </div>
             <div class="card-footer">
@@ -655,7 +685,8 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/special-weird-tropicals/coffee_flavour-pumpkin_spice.webp" class="card-img-top" alt="pumpkin spice product image">
         <div class="card-body">
-        <h5 class="class-title">🎃 pumpkin spice <h5 class="class-title">
+        <h4 class="fs-4">🎃 pumpkin spice 
+            </h4>
             <p class="card-text">a hauntingly aromatic classic </p>
         </div>
             <div class="card-footer">
@@ -669,7 +700,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/special-weird-tropicals/coffee_flavour-chilli.webp" class="card-img-top" alt="spicy chilli product image">
         <div class="card-body">
-        <h5 class="class-title">🌶️☕ Spicy Chilli
+        <h4 class="fs-4">🌶️☕ Spicy Chilli</h4>
             <p class="card-text">This brew bites back.</p>
         </div>
             <div class="card-footer">
@@ -684,7 +715,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/special-weird-tropicals/coffee_flavour-draconian.webp" class="card-img-top" alt="draconic drip product image">
         <div class="card-body">
-        <h5 class="class-title">🐉 Draconic Drip<h5 class="class-title">
+        <h4 class="fs-4">🐉 Draconic Drip</h4>
             <p class="card-text">Bold. Smoky. Possibly fire-breathing.</p>
         </div>
             <div class="card-footer">
@@ -695,9 +726,9 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     </div>
     <div class="col">
     <div class="card h-100">
-        <img src="./imgs/optimised/product-imgs/Screenshot 2025-06-13 at 22.42.36.png" class="card-img-top" alt="aurora pour-ealis product image">
+        <img src="/htdocs/imgs/optimised/product-imgs/coffee-flavour-aurora.png" class="card-img-top" alt="aurora pour-ealis product image">
         <div class="card-body">
-        <h5 class="class-title">✨ The Aurora Pour-ealis<h5 class="class-title">
+        <h4 class="fs-4">✨ The Aurora Pour-ealis</h4>
             <p class="card-text">Celestial layers of flavours? At this time of year, localized entirely within our espresso machines!?".</p>
             <p class="card-text">"Yes".</p>
 
@@ -728,7 +759,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
             <img src="./imgs/optimised/product-imgs/coffee-flavour-gourment-product-img.webp" class="card-img-top" alt="house blend product image">
         <div class="card-body">
-        <h5 class="class-title">☕ House Blend<h5 class="class-title">
+        <h4 class="fs-4">☕ House Blend</h4>
             <p class="card-text">Our signature brew. Balanced, bold, and full of main-character energy.</p>
         </div>
             <div class="card-footer">
@@ -741,7 +772,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/coffee-flavour-gourment-product-img.webp" class="card-img-top" alt="australian wombah organic product image">
         <div class="card-body">
-        <h5 class="class-title">🌱 Australian Wombah Organic<h5 class="class-title">
+        <h4 class="fs-4">🌱 Australian Wombah Organic</h4>
             <p class="card-text">Locally grown, ethically sourced, and strong enough to wrestle a wombat (non-literally… we think).</p>
         </div>
             <div class="card-footer">
@@ -754,7 +785,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/coffee-flavour-gourment-product-img.webp" class="card-img-top" alt="ethiopian fair trade organic product image">
         <div class="card-body">
-        <h5 class="class-title">🇪🇹 Ethiopian Fair Trade Organic<h5 class="class-title">
+        <h4 class="fs-4">🇪🇹 Ethiopian Fair Trade Organic</h4>
             <p class="card-text">Fruity, floral, and ridiculously smooth. Mother Earth approved.</p>
         </div>
             <div class="card-footer">
@@ -767,7 +798,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/coffee-flavour-gourment-product-img.webp" class="card-img-top" alt="guatemalan product image">
         <div class="card-body">
-        <h5 class="class-title">🌄 Guatemalan<h5 class="class-title">
+        <h4 class="fs-4">🌄 Guatemalan</h4>
             <p class="card-text">Bright, zesty, and a little mysterious—like a coffee with a secret.</p>
         </div>
             <div class="card-footer">
@@ -780,7 +811,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/coffee-flavour-gourment-product-img.webp" class="card-img-top" alt="blue mountain product image">
         <div class="card-body">
-        <h5 class="class-title">🏞️ Blue Mountain<h5 class="class-title">
+        <h4 class="fs-4">🏞️ Blue Mountain</h4>
             <p class="card-text">Premium Jamaican vibes. Smooth, rich, and cooler than your last Tinder date.</p>
         </div>
             <div class="card-footer">
@@ -793,7 +824,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/coffee-flavour-gourment-product-img.webp" class="card-img-top" alt="espresso product image">
         <div class="card-body">
-        <h5 class="class-title">💥 Espresso<h5 class="class-title">
+        <h4 class="fs-4">💥 Espresso</h4>
             <p class="card-text">Straight to the point. No fluff. No drama. Just boom.</p>
         </div>
             <div class="card-footer">
@@ -806,7 +837,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/coffee-flavour-gourment-product-img.webp" class="card-img-top" alt="java product image">
         <div class="card-body">
-        <h5 class="class-title">🌋 Java<h5 class="class-title">
+        <h4 class="fs-4">🌋 Java</h4>
             <p class="card-text">Old-school cool with deep, earthy notes. This bean doesn’t play.</p>
         </div>
             <div class="card-footer">
@@ -819,7 +850,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/coffee-flavour-gourment-product-img.webp" class="card-img-top" alt="pure colombian product image">
         <div class="card-body">
-        <h5 class="class-title">🇨🇴 Pure Colombian<h5 class="class-title">
+        <h4 class="fs-4">🇨🇴 Pure Colombian</h4>
             <p class="card-text">Classic, rich, and smooth like a silk robe on a Sunday.</p>
         </div>
             <div class="card-footer">
@@ -832,7 +863,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/coffee-flavour-gourment-product-img.webp" class="card-img-top" alt="mocha product image">
         <div class="card-body">
-        <h5 class="class-title">🍫 Mocha<h5 class="class-title">
+        <h4 class="fs-4">🍫 Mocha</h4>
             <p class="card-text">Chocolate meets coffee, falls in love, and never looks back.</p>
         </div>
             <div class="card-footer">
@@ -845,7 +876,7 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     <div class="card h-100">
         <img src="./imgs/optimised/product-imgs/coffee-flavour-gourment-product-img.webp" class="card-img-top" alt="house blend decaf product image">
         <div class="card-body">
-        <h5 class="class-title">☕ House Blend (Decaf)<h5 class="class-title">
+        <h4 class="fs-4">☕ House Blend (Decaf)</h4>
             <p class="card-text">All the taste, none of the chaos. For the rebels with bedtime.</p>
         </div>
             <div class="card-footer">
@@ -856,37 +887,51 @@ Like grandma’s pie… if grandma was a barista with sass.</p>
     </div>
     </div>
     </section>
-
 </main>
-    <!-- FOOTER - START -->
-<!-- =========================
-         FOOTER
-    ========================== -->
-   <footer class="container-fluid py-4">
-      <div class="left-col col-lg-8 ">
-        <a href="./aboutus.html" id="footer-brand-name" class=" ">THE DRIP ROOM </a>
-        <a href="#" class="footer-link">site map</a>
-        <a href="#" class="footer-link">Our privacy policy </a>
+
+<!-- FOOTER -->
+<footer class="container-fluid py-4">
+  <div class="row row-cols-2  ">
+  <div class="left-col-footer col-md-8">
+    <a href="./aboutus.html" class="footer-brand-name" 
+      >THE DRIP ROOM Cafe - Moorabbin
+    </a>
+    <a href="./site-map.html" class="footer-link">site map</a>
+    <a href="./privacy-policy.html" class="footer-link">Our privacy policy </a>
+  </div>
+  <div class="right-col-footer col-md-4">
+    <div class="social-media-row-footer">
+      <p class="fw-bold mx-4" id="footer-socials-heading">Stay Groovy 🍩</p>
+      <div class="social-media-icons">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank" rel="noopener noreferrer" 
+          title="this is a link to our instagram page in a new tab"
+          class="fs-3"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+  href="https://www.facebook.com/"
+  target="_blank" rel="noopener noreferrer" 
+  title="this is a link to our facebook page in a new tab"
+  class="fs-3"
+>
+  <i class="fa-brands fa-facebook"></i>
+</a>
       </div>
-      <div class="right-col col-lg-4">
-        <div class="social-media-row-footer">
-          <p class="fw-bold  mx-4" id="footer-socials-heading">Stay Groovy 🍩</p>
-          <div class="social-media-icons">
-            <a href="https://www.instagram.com/" target="_blank" title="this is a link to our instagram page in a new tab" class="fs-3" >
-              <i class="fa-brands fa-instagram" ></i>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank" title="this is a link to our facebook page in a new tab" class="fs-3">
-              <i class="fa-brands fa-facebook" ></i>
-            </a>
-          </div>
-        </div>
-        <div id="copyright-row" class="container">
-            <p id="footer-link-copyright">© 2025 The Drip Room. All rights reserved.</p>
-        </div>
-      </div>
-   </footer>
-<!-- FOOTER - END -->
+    </div>
+    <div id="copyright-row" class="container">
+      <p id="footer-link-copyright">
+        © 2025 The Drip Room. All rights reserved.
+      </p>
+    </div>
+  </div>
+</div>
+</footer>
 <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+</script>
+
 </body>
 </html>

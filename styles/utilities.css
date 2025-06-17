@@ -1,0 +1,17 @@
+/* SECTION - utility classes */
+.flip-x {
+  transform: scaleX(-1);
+}
+
+.flip-y {
+  transform: scaleY(-1);
+}
+
+/* TYPOGRAPHY-utility classes */
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}

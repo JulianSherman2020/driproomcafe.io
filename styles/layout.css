@@ -15,10 +15,7 @@ p {
   margin: 0;
   padding: 0;
 }
-/* Enable scrolling if needed */
-body {
-  overflow: auto;
-}
+
 
 header {
   background-color: var(--primary-color);

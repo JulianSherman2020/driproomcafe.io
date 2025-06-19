@@ -7,6 +7,15 @@
   align-items: flex-start;
   text-align: left;
 }
+
+#hero-content-box {
+  max-width: 43%;
+  height:100%;
+}
+
+.hero-image {
+  max-width:40;
+}
 /* ========== 1. BACKGROUND IMAGES ========== */
 #hero {
   background-image: url("/htdocs/imgs/optimised/background-imgs/espresso_machine-1.webp");

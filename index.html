@@ -50,7 +50,7 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag("js", new Date()); 
 
       gtag("config", "G-0XD3Q5RFWE");
     </script>
@@ -119,9 +119,10 @@
       </div>
     </nav>
     <!-- HEADER-->
-    <header id="hero" class="container-fluid">
+    <header id="hero" class="container-fluid ">
       <div class="container">
-        <div class="content row">
+        <!--left col-->
+        <div class="content col-7 row" id="hero-content-box">
           <div class="col-7">
             <h1 class="fs-1">The Drip Room</h1>
             <h2 class="fs-2">Your new local obsession</h2>
@@ -129,7 +130,6 @@
             <h2 class="fs-2">hours</h2>
             <p>Mon–Fri: 7am – 4pm (because mornings are hard)</p>
             <p>Sat–Sun: 8am – 4pm (sleep in, then sip up)</p>
-
             <a
               href="https://maps.app.goo.gl/C2r5xLif9LAQQSUa7"
               target="_blank"
@@ -140,12 +140,18 @@
           <div class="col-5">
             <img
               src="/htdocs/imgs/walking-coffee.svg"
-              class="img-fluid hero-image"
+              class="img-fluid hero-image col"
               alt="hero image of a cartoon like coffee cup character walking with a coffee to go cup in hand"
             />
+              <!--right col-->
+        <div id="weather-suggestion" class="p-3 bg-light rounded shadow-sm my-3 col">
+          <p>Loading your coffee recommendation... ☕</p>
+        </div>
           </div>
         </div>
+      
       </div>
+     
     </header>
     <!-- MAIN-CONTENT-->
     <main class="container-fluid">
@@ -187,6 +193,7 @@
       <section id="now-brewing-instore" class="container">
         <!-- SECTION - INTRO  -->
         <div id="section-intro" class="row my-4">
+          
           <h2 class="fs-2 innner-section-heading">
             A Rainbow of Flavours ☕🌈
           </h2>
@@ -608,5 +615,8 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./config.js"></script>
+    <script src="./weather.js" defer></script>
   </body>
 </html>

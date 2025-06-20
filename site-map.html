@@ -1,46 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+    default-src 'self';
+    script-src 'self' https://cdn.jsdelivr.net https://kit.fontawesome.com https://www.googletagmanager.com https://cdnjs.cloudflare.com;
+    style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline';
+    font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net https://kit.fontawesome.com;
+    img-src 'self' data:;
+    connect-src 'self' https://api.openweathermap.org;
+  "
+    />
+
     <meta
       name="google-site-verification"
       content="PyQyKo8ZLTrybe5kJW9ABOrEU-OqsE7NWz8Tdvn4Pzg"
     />
-    <title>the driproom cafe - home</title>
-    <link rel="icon" type="image/x-icon" href="./imgs/logos/Mug-Walking.svg" />
-    <!--   BOOTSTRAP - Stylesheet via CDN -->
+    <!-- SEO META DESCRIPTION -->
+    <meta
+      name="description"
+      content="The Drip Room – A groovy, cheeky café near Holmesglen. Great coffee, good vibes, and student deals."
+    />
+    <title>the driproom cafe - site map</title>
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/cafe-project/htdocs/imgs/Mug-Walking.svg"
+    />
+    <!-- BOOSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <!-- FONT AWESOME Stylesheet via CDN -->
+    <!-- FONT AWESOME CDN  -->
     <script
       src="https://kit.fontawesome.com/ef7b8b5072.js"
       crossorigin="anonymous"
     ></script>
-    <!-- GOOGLE FONTS -->
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./colours.css" />
+    <link rel="stylesheet" href="./components.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link rel="stylesheet" href="./sections.css" />
+    <link rel="stylesheet" href="./typography.css" />
+    <link rel="stylesheet" href="./utilities.css" />
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="colours.css">
-  <link rel="stylesheet" href="components.css">
-  <link rel="stylesheet" href="layout.css">
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="stylesheet" href="sections.css">
-  <link rel="stylesheet" href="typography.css">
-  <link rel="stylesheet" href="utilities.css">
-    <!-- Google Analytics 4 tracking script: loads gtag.js and initializes analytics with Measurement ID -->
+    <!-- GOOGLE ANALYTICS TRACKER SCRIPT-->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-0XD3Q5RFWE"
     ></script>
+    <!-- Initializes GA4 -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -50,6 +71,7 @@
 
       gtag("config", "G-0XD3Q5RFWE");
     </script>
+    <!-- GOOGLE ANALYTICS END-->
   </head>
 
   <body>
@@ -57,11 +79,7 @@
     <nav class="navbar sticky-top navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand justify-content-start" href="./index.html">
-          <img
-            src="./imgs/logos/Mug-Walking.svg"
-            class="icon"
-            alt="The Drip Room Cafe logo - walking mug"
-          />
+          <img src="./imgs/Mug-Walking.svg" class="icon" />
           the drip room
         </a>
         <button
@@ -82,9 +100,7 @@
           <!-- NAV-LINKS Section -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                >home</a
-              >
+              <a class="nav-link" href="./index.html">home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./store.html">store</a>
@@ -96,12 +112,21 @@
               <a class="nav-link" href="./coffee-card.html">coffee card</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="./venue.html">venue </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">about us</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="./contact.html">contact us</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="./cart.html">cart</a>
+            </li>
+            <li class="nav-item">
               <a
-                class="nav-link btn-find-us"
-                href="https://maps.app.goo.gl/69LfUh5GH5MVbF5j7"
+                class="nav-link nav-find-us"
+                href="https://maps.app.goo.gl/69LfUh4Gh4MVbF5j7"
                 target="_blank"
                 >find us</a
               >

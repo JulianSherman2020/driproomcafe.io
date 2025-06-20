@@ -4,13 +4,15 @@
     <meta
       http-equiv="Content-Security-Policy"
       content="
-      default-src 'self';
-      script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.kirilv.com;
-      style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net;
-      font-src https://fonts.gstatic.com;
-      img-src 'self';
-      connect-src 'self' https://api.openweathermap.org;"
+    default-src 'self';
+    script-src 'self' https://cdn.jsdelivr.net https://kit.fontawesome.com https://www.googletagmanager.com https://cdnjs.cloudflare.com;
+    style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline';
+    font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net https://kit.fontawesome.com;
+    img-src 'self' data:;
+    connect-src 'self' https://api.openweathermap.org;
+  "
     />
+
     <meta
       name="google-site-verification"
       content="PyQyKo8ZLTrybe5kJW9ABOrEU-OqsE7NWz8Tdvn4Pzg"
@@ -628,7 +630,7 @@
     </footer>
 
     <!-- SCRIPT FILES & API CDNS START -->
-    <!-- Bootstrap JS (should be above your scripts) -->
+    <!-- Bootstrap JS  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"

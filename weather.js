@@ -1,13 +1,45 @@
-// weather.js
+/**
+ * @file weather.js
+ * @description
+ * This script contains the WeatherSuggestionWidget class which fetches current weather
+ * data from the OpenWeatherMap API and displays a coffee flavor suggestion
+ * based on temperature and weather conditions. It also animates the UI using anime.js.
+ *
+ * No parent classes.
+ */
 
-// Class to handle weather-based coffee suggestions
+/**
+ * Class to fetch weather data and suggest coffee flavors accordingly.
+ */
 class WeatherSuggestionWidget {
+  /**
+   * Creates a WeatherSuggestionWidget instance.
+   *
+   * @param {Object} config - Configuration object containing API details.
+   * @param {string} config.weatherApiURL - Base URL for the weather API.
+   * @param {string} config.location - Location string (e.g., "Moorabbin,AU").
+   * @param {string} config.weatherApiKey - API key for weather API.
+   * @param {string} config.units - Units for temperature ("metric" or "imperial").
+   */
   constructor(config) {
+    /**
+     * The complete URL used to fetch weather data.
+     * @type {string}
+     * @private
+     */
     this.apiURL = `${config.weatherApiURL}?q=${config.location}&appid=${config.weatherApiKey}&units=${config.units}`;
+
+    /**
+     * The DOM element where weather suggestion will be displayed.
+     * @type {HTMLElement}
+     * @private
+     */
     this.targetBox = document.getElementById("weather-suggestion");
   }
 
-  // Fetch weather data from API and render suggestion
+  /**
+   * Initialize the widget: fetch weather data and update UI accordingly.
+   */
   init() {
     if (!this.targetBox) return;
 
@@ -27,7 +59,13 @@ class WeatherSuggestionWidget {
       });
   }
 
-  // Suggest a coffee flavor based on temperature and weather
+  /**
+   * Suggest a coffee flavor based on temperature and weather condition.
+   *
+   * @param {number} temp - Current temperature in degrees.
+   * @param {string} condition - Weather condition description.
+   * @returns {string} - Suggested coffee flavor.
+   */
   getFlavorSuggestion(temp, condition) {
     if (temp < 10) return "Caramel Apple Custard Delight 🍎";
     if (condition === "Rain") return "Hot Cocoa Hazelnut Swirl 🌧️";
@@ -37,7 +75,13 @@ class WeatherSuggestionWidget {
     return "The Signature Brew ☕";
   }
 
-  // Update the DOM with the weather info and suggested coffee
+  /**
+   * Render the weather and coffee suggestion into the target DOM element.
+   *
+   * @param {number} temp - Current temperature.
+   * @param {string} condition - Current weather condition.
+   * @param {string} flavor - Suggested coffee flavor.
+   */
   renderSuggestion(temp, condition, flavor) {
     this.targetBox.innerHTML = `
       <h4 class="fs-4 mb-2">🌤️ Weather-Based Brew Pick</h4>
@@ -46,7 +90,9 @@ class WeatherSuggestionWidget {
     `;
   }
 
-  // Animate the widget using anime.js if available
+  /**
+   * Animate the weather suggestion container into view using anime.js.
+   */
   animateIn() {
     if (typeof anime !== "undefined") {
       anime({
@@ -60,11 +106,10 @@ class WeatherSuggestionWidget {
   }
 }
 
-// Wait for the page to load before starting widget
+// Initialize the weather widget once DOM is loaded and CONFIG is available
 document.addEventListener("DOMContentLoaded", () => {
-  // Ensure CONFIG is available globally
   if (typeof CONFIG !== "undefined") {
-    const weatherWidget = new WeatherSuggestionWidget(CONFIG);
-    weatherWidget.init();
+    const widget = new WeatherSuggestionWidget(CONFIG);
+    widget.init();
   }
 });

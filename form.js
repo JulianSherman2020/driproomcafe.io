@@ -1,52 +1,73 @@
 /**
- * CoffeeCardSignup Class
- * Handles validation, animations, and submission logic for the Coffee Card membership sign-up form.
- * Utilizes JustValidate for form validation, Anime.js for animations, and canvas-confetti for celebration.
+ * @file form.js
+ * @description
+ * This script contains the CoffeeCardSignup class which manages the membership signup form
+ * for The Drip Room Coffee Card. It handles validation using JustValidate, animations via anime.js,
+ * and celebratory confetti using canvas-confetti. On successful submission, it shows a success message,
+ * animates UI elements, and redirects the user to a thank-you page.
+ *
+ * No parent classes.
+ */
+
+/**
+ * Class to handle Coffee Card signup form validation, animation, and submission.
  */
 class CoffeeCardSignup {
   /**
-   * Create an instance of CoffeeCardSignup
-   * @param {string} formSelector - CSS selector for the target form element
+   * Creates an instance of CoffeeCardSignup.
+   * @param {string} formSelector - CSS selector of the form to validate.
    */
   constructor(formSelector) {
-    // Select the form element based on the provided selector
+    /**
+     * The form element being validated.
+     * @type {HTMLFormElement}
+     * @private
+     */
     this.form = document.querySelector(formSelector);
-    // Initialize JustValidate on this form
+
+    /**
+     * The JustValidate validator instance for the form.
+     * @type {JustValidate}
+     * @private
+     */
     this.validator = new JustValidate(formSelector);
-    // Cache reference to the success message container
+
+    /**
+     * The DOM element to display success messages.
+     * @type {HTMLElement}
+     * @private
+     */
     this.successMsg = document.getElementById("form-success-msg");
 
-    // Setup validation rules and event handling
     this._setupValidation();
   }
 
   /**
-   * Setup form validation rules using JustValidate library
-   * Includes rules for required fields, email format, password complexity, and matching passwords
+   * Sets up validation rules for each form field using JustValidate.
+   * Includes required fields, password complexity, and matching passwords.
    * @private
    */
   _setupValidation() {
     this.validator
       .addField("#fName", [
-        { rule: "required" }, // First name is required
-        { rule: "minLength", value: 3 }, // Minimum 3 characters
-        { rule: "maxLength", value: 15 }, // Maximum 15 characters
+        { rule: "required" },
+        { rule: "minLength", value: 3 },
+        { rule: "maxLength", value: 15 },
       ])
-      .addField("#lName", [{ rule: "required" }]) // Last name required
-      .addField("#email", [{ rule: "required" }, { rule: "email" }]) // Email required + valid format
-      .addField("#dob", [{ rule: "required" }]) // DOB required
+      .addField("#lName", [{ rule: "required" }])
+      .addField("#email", [{ rule: "required" }, { rule: "email" }])
+      .addField("#dob", [{ rule: "required" }])
       .addField("#create-pwd", [
-        { rule: "required" }, // Password required
+        { rule: "required" },
         {
-          rule: "password", // Must match complexity requirements
+          rule: "password",
           errorMessage:
             "Password must include uppercase, lowercase, number, symbol, 8–30 chars.",
         },
       ])
       .addField("#confirm-pwd", [
-        { rule: "required" }, // Confirm password required
+        { rule: "required" },
         {
-          // Custom validator to check passwords match
           validator: (value, fields) =>
             value === fields["#create-pwd"].elem.value,
           errorMessage: "Passwords do not match!",
@@ -54,28 +75,26 @@ class CoffeeCardSignup {
       ])
       .addField("#membership", [
         {
-          rule: "required", // Membership selection required
+          rule: "required",
           errorMessage: "Please select a membership option",
         },
       ])
-      // Attach success handler method, bound to this instance
       .onSuccess((event) => this._handleSuccess(event));
   }
 
   /**
-   * Handles successful form submission event
-   * Shows success message, animates form and message, launches confetti, and redirects after delay
-   * @param {Event} event - The form submission event
+   * Handles the form submission after successful validation.
+   * Prevents default submission, shows a success message, triggers animations,
+   * launches confetti, and redirects after a delay.
+   *
+   * @param {Event} event - The form submission event.
    * @private
    */
   _handleSuccess(event) {
-    // Prevent actual form submission (page reload)
     event.preventDefault();
 
-    // Show the success message container
     this.successMsg.classList.remove("d-none");
 
-    // Animate the success message: fade in + slide up
     anime({
       targets: "#form-success-msg",
       opacity: [0, 1],
@@ -84,7 +103,6 @@ class CoffeeCardSignup {
       easing: "easeOutExpo",
     });
 
-    // Animate form to fade to 50% opacity to indicate processing
     anime({
       targets: this.form,
       opacity: 0.5,
@@ -92,27 +110,24 @@ class CoffeeCardSignup {
       easing: "easeOutQuad",
     });
 
-    // Launch confetti celebration animation
     this._launchConfetti();
 
-    // Redirect user to thank-you page after 3 seconds delay
     setTimeout(() => {
       window.location.href = "thankyou.html";
     }, 3000);
   }
 
   /**
-   * Launches confetti animations from two different horizontal origins
-   * Uses the global 'confetti' function from canvas-confetti library
+   * Launches confetti animations from two different horizontal positions.
+   * Provides instant visual feedback upon successful form submission.
+   *
    * @private
    */
   _launchConfetti() {
-    // Left side confetti burst
     confetti({
       particleCount: 50,
       origin: { x: Math.random() * 0.2 + 0.1, y: Math.random() - 0.2 },
     });
-    // Right side confetti burst
     confetti({
       particleCount: 50,
       origin: { x: Math.random() * 0.2 + 0.7, y: Math.random() - 0.2 },
@@ -120,7 +135,7 @@ class CoffeeCardSignup {
   }
 }
 
-// Instantiate and run CoffeeCardSignup when DOM content is loaded
+// Initialize form validation and handling once the DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   new CoffeeCardSignup("#signupForm");
 });

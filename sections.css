@@ -2,23 +2,18 @@
 #hero {
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   text-align: left;
 }
 
-#hero-content-box {
-  max-width: 43%;
-  height:100%;
-}
-
 .hero-image {
-  max-width:40;
+  max-width: 40;
 }
 /* ========== 1. BACKGROUND IMAGES ========== */
 #hero {
-  background-image: url("/htdocs/imgs/optimised/background-imgs/espresso_machine-1.webp");
+  background-image: url("imgs/optimised/background-imgs/espresso_machine-1.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -45,7 +40,6 @@
   border-radius: 4px;
 }
 
-
 .inner-section-box {
   background-color: var(--primary-color-lighter);
   border-color: black;
@@ -55,26 +49,25 @@
 }
 
 #about {
-  background-image: url("/htdocs/imgs/optimised/background-imgs/drip_room_cafe-venue-1.webp");
+  background-image: url("/imgs/optimised/background-imgs/drip_room_cafe-venue-1.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 #coffee-card {
-  background-image: url("/htdocs/imgs/optimised/background-imgs/cafe_cookie_counter-1.webp");
+  background-image: url("/imgs/optimised/background-imgs/cafe_cookie_counter-1.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 #venue-info {
-  background-image: url("/htdocs/imgs/optimised/background-imgs/drip_room_cafe-venue-2.webp");
+  background-image: url("/imgs/optimised/background-imgs/drip_room_cafe-venue-2.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 
 /* Coffee Card section text spacing */
 #coffee-card-student-info p {
@@ -114,4 +107,12 @@
   padding: 20px;
   text-align: justify;
   text-align-last: left;
+}
+
+#coffee-purchased {
+  background-color: var(--primary-color);
+}
+
+#points-earned {
+  background-color: var(--secondary-color);
 }

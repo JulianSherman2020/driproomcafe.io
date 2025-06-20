@@ -54,7 +54,6 @@
   border-radius: 4px;
 }
 
-
 .sidenav-link-col .col:hover {
   background-color: var(--primary-color-lighter);
   color: black;
@@ -127,8 +126,8 @@
 }
 
 .right-col-footer {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 footer {
   border: 2px solid black;
@@ -165,6 +164,3 @@ footer a:hover {
   justify-content: center;
   align-items: center;
 }
-
-
-

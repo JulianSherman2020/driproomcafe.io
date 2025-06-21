@@ -13,7 +13,7 @@
 }
 /* ========== 1. BACKGROUND IMAGES ========== */
 #hero {
-  background-image: url("imgs/optimised/background-imgs/espresso_machine-1.webp");
+  background-image: url("./imgs/optimised/background-imgs/espresso_machine-1.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -49,21 +49,21 @@
 }
 
 #about {
-  background-image: url("/imgs/optimised/background-imgs/drip_room_cafe-venue-1.webp");
+  background-image: url("./imgs/optimised/background-imgs/drip_room_cafe-venue-1.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 #coffee-card {
-  background-image: url("/imgs/optimised/background-imgs/cafe_cookie_counter-1.webp");
+  background-image: url("./imgs/optimised/background-imgs/cafe_cookie_counter-1.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 #venue-info {
-  background-image: url("/imgs/optimised/background-imgs/drip_room_cafe-venue-2.webp");
+  background-image: url("./imgs/optimised/background-imgs/drip_room_cafe-venue-2.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

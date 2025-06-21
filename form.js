@@ -51,6 +51,7 @@ class CoffeeCardSignup {
     this.validator
       .addField("#fName", [
         { rule: "required" },
+        { errorMessage: "first name is required" },
         { rule: "minLength", value: 3 },
         { rule: "maxLength", value: 15 },
       ])

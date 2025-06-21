@@ -30,7 +30,15 @@ class CoffeeCardSignup {
      * @type {JustValidate}
      * @private
      */
-    this.validator = new JustValidate(formSelector);
+    this.validator = new JustValidate(formSelector, {
+      errorLabelStyle: {
+        display: "block",
+      },
+      errorLabelCssClass: "alert alert-danger py-2 px-3 mt-1 mb-2",
+      errorContainer: (field) => {
+        return field.input.closest(".mb-3")?.querySelector(".js-error-message");
+      },
+    });
 
     /**
      * The DOM element to display success messages.
@@ -50,24 +58,51 @@ class CoffeeCardSignup {
   _setupValidation() {
     this.validator
       .addField("#fName", [
-        { rule: "required" },
-        { errorMessage: "first name is required" },
+        {
+          rule: "required",
+          errorMessage:
+            "first name is required, please ensure to insert your first name",
+        },
         { rule: "minLength", value: 3 },
         { rule: "maxLength", value: 15 },
       ])
-      .addField("#lName", [{ rule: "required" }])
-      .addField("#email", [{ rule: "required" }, { rule: "email" }])
-      .addField("#dob", [{ rule: "required" }])
-      .addField("#create-pwd", [
-        { rule: "required" },
+      .addField("#lName", [
         {
-          rule: "password",
+          rule: "required",
+          errorMessage:
+            "last name is required, please ensure to insert your last name",
+        },
+      ])
+      .addField("#email", [
+        {
+          rule: "required",
+          errorMessage:
+            "a valid email address is required for verification and password resets, please ensure to insert your email address. Ensure you include the @symbol!!!!",
+        },
+        {
+          rule: "email",
+          errorMessage: "That doesn’t look like a real email address!",
+        },
+      ])
+      .addField("#dob", [
+        {
+          rule: "required",
+          errorMessage: "Please enter your date of birth",
+        },
+      ])
+      .addField("#create-pwd", [
+        {
+          rule: "required",
           errorMessage:
             "Password must include uppercase, lowercase, number, symbol, 8–30 chars.",
         },
+        { rule: "password" },
       ])
       .addField("#confirm-pwd", [
-        { rule: "required" },
+        {
+          rule: "required",
+          errorMessage: "please ensure your password matches!",
+        },
         {
           validator: (value, fields) =>
             value === fields["#create-pwd"].elem.value,
@@ -77,7 +112,7 @@ class CoffeeCardSignup {
       .addField("#membership", [
         {
           rule: "required",
-          errorMessage: "Please select a membership option",
+          errorMessage: "Please ensure to select a membership option",
         },
       ])
       .onSuccess((event) => this._handleSuccess(event));

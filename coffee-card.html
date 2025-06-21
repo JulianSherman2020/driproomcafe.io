@@ -159,7 +159,6 @@
       </div>
       <!-- SECTION: COFFEE CARD SIGN UP -->
       <section id="coffee-card-signup" class="row row-cols-lg-2 row-cols-md-1">
-        <!-- FORM START-->
         <form class="col container" id="signupForm">
           <h3 class="fs-3 fw-bold mb-4">
             CREATE A VERY COOL NEW MEMBERSHIP WITH US 👇
@@ -167,90 +166,134 @@
           <h4 class="fs-4 mb-4">
             FILL IN THE DETAILS TO SIGN UP TO OUR REWARDS PROGRAM
           </h4>
-          <label for="fName" class="form-label">first Name</label>
-          <input
-            required
-            type="text"
-            class="form-control"
-            id="fName"
-            placeholder="e.g. Bean"
-            name="fName"
-          />
-          <label for="lName" class="form-label">Last Name</label>
-          <input
-            required
-            type="text"
-            class="form-control"
-            id="lName"
-            placeholder="e.g. Bean"
-            name="lName"
-          />
-          <label for="dob" class="form-label">date of birth</label>
-          <p>so we can throw you amazing cake day discounts of course!</p>
-          <input
-            required
-            type="date"
-            class="form-control"
-            id="dob"
-            name="dob"
-          />
-          <label for="email" class="form-label">email</label>
-          <input
-            required
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="you@lovebrew.com"
-            name="email"
-          />
-          <label for="create-pwd" class="form-label">create a password</label>
-          <input
-            required
-            type="password"
-            class="form-control"
-            id="create-pwd"
-            placeholder="your password here"
-            name="create-pwd"
-          />
-          <div class="form-text">
-            Password must contain the following:
-            <ul class="col">
-              <li>Uppercase</li>
-              <li>Lowercase</li>
-              <li>Number</li>
-              <li>8-30 characters</li>
-              <li>Any of !, @, #, %, ^, &, +, =, -</li>
-            </ul>
+
+          <div class="mb-3">
+            <div class="js-error-message"></div>
+            <label for="fName" class="form-label">First Name</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="fName"
+              placeholder="e.g. Bean"
+              name="fName"
+              aria-describedby="error-fName"
+              aria-invalid="false"
+            />
           </div>
 
-          <label for="confirm-pwd" class="form-label">confirm password</label>
-          <div class="form-text mb-3">
-            Please ensure your passwords match (we know its annoying bruh, but
-            we have to do it)
+          <div class="mb-3">
+            <div class="js-error-message"></div>
+            <label for="lName" class="form-label">Last Name</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="lName"
+              placeholder="e.g. Bean"
+              name="lName"
+              aria-describedby="error-lName"
+              aria-invalid="false"
+            />
           </div>
-          <input
-            required
-            type="password"
-            class="form-control"
-            id="confirm-pwd"
-            placeholder="confirm your password"
-            name="confirm-pwd"
-          />
-          <label for="membership" class="form-label">Membership</label>
-          <select
-            id="membership"
-            class="form-select"
-            aria-label="Default select example"
-            name="membership"
-          >
-            <option value="" selected disabled>select membership</option>
-            <option value="1">everyday member</option>
-            <option value="2">student member</option>
-          </select>
+
+          <div class="mb-3">
+            <div class="js-error-message"></div>
+            <label for="dob" class="form-label">Date of Birth</label>
+            <p>so we can throw you amazing cake day discounts of course!</p>
+            <input
+              required
+              type="date"
+              class="form-control"
+              id="dob"
+              name="dob"
+              aria-describedby="error-date"
+              aria-invalid="false"
+            />
+          </div>
+
+          <div class="mb-3">
+            <div class="js-error-message"></div>
+
+            <label for="email" class="form-label">Email</label>
+            <div class="js-error-message"></div>
+            <input
+              required
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="you@lovebrew.com"
+              name="email"
+              aria-describedby="error-email"
+              aria-invalid="false"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="create-pwd" class="form-label">Create a Password</label>
+            <div class="js-error-message"></div>
+            <input
+              required
+              type="password"
+              class="form-control"
+              id="create-pwd"
+              placeholder="your password here"
+              name="create-pwd"
+              aria-describedby="error-create-pwd"
+              aria-invalid="false"
+            />
+            <div class="form-text">
+              Password must contain the following:
+              <ul class="col">
+                <li>Uppercase</li>
+                <li>Lowercase</li>
+                <li>Number</li>
+                <li>8-30 characters</li>
+                <li>Any of !, @, #, %, ^, &, +, =, -</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="confirm-pwd" class="form-label">Confirm Password</label>
+            <div class="js-error-message"></div>
+            <div class="form-text mb-3">
+              Please ensure your passwords match (we know it's annoying bruh,
+              but we have to do it)
+            </div>
+            <input
+              required
+              type="password"
+              class="form-control"
+              id="confirm-pwd"
+              placeholder="confirm your password"
+              name="confirm-pwd"
+              aria-describedby="error-confirm-pwd"
+              aria-invalid="false"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="membership" class="form-label">Membership</label>
+            <div class="js-error-message"></div>
+            <select
+              id="membership"
+              class="form-select"
+              aria-label="Default select example"
+              name="membership"
+              aria-describedby="error-membership"
+              aria-invalid="false"
+            >
+              <option value="" selected disabled>select membership</option>
+              <option value="1">everyday member</option>
+              <option value="2">student member</option>
+            </select>
+          </div>
 
           <button type="submit" class="btn btn-primary w-100">
             SIGN UP 🚀
           </button>
+
           <div
             id="form-success-msg"
             class="alert alert-success text-center d-none mt-4"
